@@ -27,7 +27,8 @@ export function HairSolutions() {
   const goToSlide = (index: number) => {
     const next = Math.max(0, Math.min(index, solutions.length - 1));
     const element = carousel.current;
-    if (element) element.scrollTo({ left: next * element.clientWidth, behavior: "smooth" });
+    const slide = element?.children[next] as HTMLElement | undefined;
+    if (element) element.scrollTo({ left: slide?.offsetLeft ?? 0, behavior: "smooth" });
     setActiveSlide(next);
   };
 
@@ -38,8 +39,8 @@ export function HairSolutions() {
         <h2 className="mt-1 lg:mt-2 text-center text-[30px] font-medium tracking-[.2px] max-[620px]:text-[23px]">Advanced Root Canal Solutions For <Underline className="font-bold text-[#0067ac]">Every Dental Need</Underline></h2>
       </Reveal>
 
-      <div ref={carousel} onScroll={(event) => setActiveSlide(Math.round(event.currentTarget.scrollLeft / event.currentTarget.clientWidth))} className="mt-6 grid grid-cols-5 gap-x-5 gap-y-8 max-[1100px]:grid-cols-3 max-[700px]:grid-cols-2 max-[620px]:mt-4 max-[620px]:flex max-[620px]:snap-x max-[620px]:snap-mandatory max-[620px]:gap-0 max-[620px]:overflow-x-auto max-[620px]:pb-1 max-[620px]:[scrollbar-width:none] max-[620px]:[&::-webkit-scrollbar]:hidden">
-        {solutions.map((solution, index) => <Reveal as="article" key={solution.title} delay={(index % 5) * 90} direction={directions[index % directions.length]} className="text-center max-[620px]:w-full max-[620px]:shrink-0 max-[620px]:snap-center max-[620px]:px-3">
+      <div ref={carousel} onScroll={(event) => { const slides = Array.from(event.currentTarget.children) as HTMLElement[]; const nearest = slides.reduce((closest, slide, index) => Math.abs(slide.offsetLeft - event.currentTarget.scrollLeft) < Math.abs(slides[closest].offsetLeft - event.currentTarget.scrollLeft) ? index : closest, 0); setActiveSlide(nearest); }} className="mt-6 grid grid-cols-5 gap-x-5 gap-y-8 max-[1100px]:grid-cols-3 max-[700px]:grid-cols-2 max-[620px]:mt-4 max-[620px]:flex max-[620px]:snap-x max-[620px]:snap-mandatory max-[620px]:gap-0 max-[620px]:overflow-x-auto max-[620px]:pb-1 max-[620px]:[scrollbar-width:none] max-[620px]:[&::-webkit-scrollbar]:hidden">
+        {solutions.map((solution, index) => <Reveal as="article" key={solution.title} delay={(index % 5) * 90} direction={directions[index % directions.length]} className="text-center max-[620px]:w-full max-[620px]:shrink-0 max-[620px]:basis-full max-[620px]:snap-center max-[620px]:px-3">
           <div className="mx-auto h-[112px] w-[112px] rounded-full border-[5px] border-[#c9e6f5] bg-cover bg-center bg-no-repeat " style={{backgroundImage:`url(${solution.image})`}} role="img" aria-label={solution.title} />
           <h3 className="mx-auto mt-3 max-w-[210px] text-[17px] leading-tight font-bold max-[620px]:max-w-[290px]">{solution.title}</h3>
           <p className="mx-auto mt-2 max-w-[210px] text-[14px] leading-[1.55] text-[#38536b] max-[620px]:max-w-[290px]">{solution.description}</p>

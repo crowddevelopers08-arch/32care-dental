@@ -36,7 +36,8 @@ export function BeforeAfter() {
   const [activeSlide, setActiveSlide] = useState(0);
   const goToSlide = (index: number) => {
     const next = Math.max(0, Math.min(index, results.length - 1));
-    carousel.current?.scrollTo({ left: next * carousel.current.clientWidth, behavior: "smooth" });
+    const slide = carousel.current?.children[next] as HTMLElement | undefined;
+    carousel.current?.scrollTo({ left: slide?.offsetLeft ?? 0, behavior: "smooth" });
     setActiveSlide(next);
   };
   const moveCarousel = (direction: number) => goToSlide(activeSlide + direction);
@@ -58,8 +59,8 @@ export function BeforeAfter() {
       </Reveal>
 
       <div className="relative">
-      <div ref={carousel} onScroll={(event) => setActiveSlide(Math.round(event.currentTarget.scrollLeft / event.currentTarget.clientWidth))} className="flex snap-x snap-mandatory overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:grid md:grid-cols-2 md:gap-7 md:overflow-visible md:pb-0 xl:grid-cols-3">
-        {results.map((result, index) => <Reveal as="article" key={result.src} delay={index * 120} direction={directions[index % directions.length]} className="group relative w-full shrink-0 snap-center px-1.5 transition duration-500 hover:-translate-y-2 md:min-w-0 md:px-0">
+      <div ref={carousel} onScroll={(event) => { const slides = Array.from(event.currentTarget.children) as HTMLElement[]; const nearest = slides.reduce((closest, slide, index) => Math.abs(slide.offsetLeft - event.currentTarget.scrollLeft) < Math.abs(slides[closest].offsetLeft - event.currentTarget.scrollLeft) ? index : closest, 0); setActiveSlide(nearest); }} className="flex snap-x snap-mandatory overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:grid md:grid-cols-2 md:gap-7 md:overflow-visible md:pb-0 xl:grid-cols-3">
+        {results.map((result, index) => <Reveal as="article" key={result.src} delay={index * 120} direction={directions[index % directions.length]} className="group relative w-full shrink-0 basis-full snap-center px-1.5 transition duration-500 hover:-translate-y-2 md:min-w-0 md:basis-auto md:px-0">
           <div className="relative h-[430px] w-full overflow-hidden rounded-[20px] bg-[#e8f5fc] max-[390px]:h-[370px] max-[620px]:rounded-[16px] md:h-[390px] xl:h-[430px]">
             <Image src={result.src} alt={`${result.title} before and after dental treatment result`} fill className="object-cover transition duration-700 group-hover:scale-[1.025]" sizes="(max-width: 767px) calc(100vw - 44px), (max-width: 1280px) 50vw, 33vw" priority={index === 0} />
             <span className="absolute top-4 left-4 grid h-10 w-10 place-items-center rounded-full bg-[#073576] text-sm font-extrabold text-white  max-[620px]:top-3 max-[620px]:left-3 max-[620px]:h-9 max-[620px]:w-9 max-[620px]:text-[12px]">0{index + 1}</span>

@@ -8,8 +8,8 @@ const directions = ["left", "up", "right"] as const;
 
 const videos = [
   { id: 1, title: "Doctor Explaining Treatment Evaluation", videoUrl: "https://res.cloudinary.com/jfmvvhot/video/upload/v1785926865/DSC_3965_squished_y5kjb4.mp4" },
-  { id: 2, title: "Advanced Treatment Overview", videoUrl: "https://res.cloudinary.com/jfmvvhot/video/upload/v1785926808/DSC_3963_squished_lxi3jb.mp4" },
-  { id: 3, title: "In-Clinic Treatment Process", videoUrl: "https://res.cloudinary.com/jfmvvhot/video/upload/v1785926829/DSC_3962_squished_xkb6mt.mp4" },
+  { id: 2, title: "Advanced Treatment Overview", videoUrl: "https://res.cloudinary.com/jfmvvhot/video/upload/v1786005942/32Care_Dental_clinic_video_testimonial_hlhqnm.mp4" },
+  { id: 3, title: "In-Clinic Treatment Process", videoUrl: "https://res.cloudinary.com/jfmvvhot/video/upload/v1786006040/20260324_205957_azcdfc.mp4" },
 ];
 
 export default function VideoSection() {

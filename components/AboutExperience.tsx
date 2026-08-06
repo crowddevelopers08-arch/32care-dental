@@ -43,7 +43,7 @@ export function AboutExperience() {
           </SlideIn>
 
           <SlideIn className="max-[620px]:order-8 max-[620px]:mt-0" from="left">
-            <div className="mt-8 flex flex-wrap items-center gap-5">
+            <div className="mt-8 max-sm:mt-1 flex flex-wrap items-center gap-5">
               <FillSweepButton />
               {/* <a href="#patient-stories" aria-label="Watch patient stories" className="grid h-[60px] w-[60px] place-items-center rounded-full bg-[#54b6ec] text-white  transition hover:scale-110 hover:bg-[#0067ac]"><span className="ml-1 h-0 w-0 border-y-[9px] border-l-[14px] border-y-transparent border-l-white" /></a> */}
             </div>
