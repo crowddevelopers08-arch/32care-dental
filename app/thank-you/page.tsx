@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageFooter } from "@/components/PageFooter";
 import { PageHeader } from "@/components/PageHeader";
+import { ScrollToTop } from "@/components/ScrollToTop";
+import { MobileActionBar } from "@/components/MobileActionBar";
 
 export const metadata: Metadata = {
   title: "Thank You | 32Care Dental Clinic",
@@ -12,6 +14,9 @@ export default function ThankYouPage() {
   return (
     <main className="min-h-screen bg-[#f3f9fd] font-['Onest',sans-serif] text-[#092b4c]">
       <PageHeader />
+
+          <MobileActionBar />
+          <ScrollToTop />
       <section className="relative isolate flex min-h-[calc(100vh-76px)] items-center overflow-hidden px-4 py-12 sm:px-7 lg:px-12">
         <div aria-hidden="true" className="absolute -top-32 -left-24 -z-10 h-80 w-80 rounded-full bg-[#54b6ec]/20 blur-3xl" />
         <div aria-hidden="true" className="absolute -right-24 -bottom-32 -z-10 h-96 w-96 rounded-full bg-[#0067ac]/15 blur-3xl" />

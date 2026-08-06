@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { PageFooter } from "@/components/PageFooter";
 import { PageHeader } from "@/components/PageHeader";
+import { ScrollToTop } from "@/components/ScrollToTop";
+import { MobileActionBar } from "@/components/MobileActionBar";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | 32Care Dental Clinic",
@@ -20,6 +22,9 @@ export default function PrivacyPolicyPage() {
   return (
     <main className="min-h-screen bg-[#f3f9fd] font-['Onest',sans-serif] text-[#092b4c]">
       <PageHeader />
+
+          <MobileActionBar />
+          <ScrollToTop />
       <section className="px-4 py-11 sm:px-7 sm:py-16 lg:px-12">
         <div className="mx-auto max-w-[900px]">
           <header className="rounded-[24px] bg-[linear-gradient(118deg,#2d78bb_0%,#086cae_54%,#083a75_100%)] px-6 py-10 text-center text-white sm:px-12 sm:py-14">

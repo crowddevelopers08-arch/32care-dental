@@ -12,7 +12,7 @@ export function SiteFooter() {
   return (
     <footer className="relative bg-[#102532] px-5 pt-12 font-['Onest',sans-serif] text-white sm:px-8 lg:px-12">
       <div className="mx-auto max-w-[1315px]">
-        <div className="grid items-center gap-8 pb-6 md:grid-cols-[1fr_1.6fr_1fr]">
+        <div className="grid items-center max-sm:gap-4 gap-8 pb-6 md:grid-cols-[1fr_1.6fr_1fr]">
           <a href="#" aria-label="32Care Dental Clinic home" className="relative block h-[76px] w-[230px] max-w-full">
             <Image src="/logos.png" alt="32Care Dental Clinic" fill sizes="230px" className="object-contain object-left" />
           </a>
@@ -32,10 +32,10 @@ export function SiteFooter() {
 
         <div className="h-px bg-white/10" />
 
-        <div className="grid gap-12 py-6 md:grid-cols-2 lg:grid-cols-[1.15fr_.8fr_1fr_1fr] lg:gap-16">
+        <div className="grid gap-12 max-sm:gap-6 py-6 md:grid-cols-2 lg:grid-cols-[1.15fr_.8fr_1fr_1fr] lg:gap-16">
           <Reveal delay={0}>
             <h2 className="text-[19px] font-extrabold">Find Us</h2>
-            <div className="mt-8 overflow-hidden rounded-[8px] border border-white/10 ">
+            <div className="mt-8 max-sm:mt-3 overflow-hidden rounded-[8px] border border-white/10 ">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13376.657616850724!2d73.956941!3d18.551433!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3e822bb13d7%3A0x114534f0c1dcb152!2s32Care%20Dental%20Clinic%20In%20Kharadi%20%7C%20Dentist%20in%20Kharadi%2C%20Pune%20%7C%20Dental%20Implants%20%7C%20Braces!5e1!3m2!1sen!2sin!4v1785937628463!5m2!1sen!2sin"
                 title="32Care Dental Clinic location in Kharadi, Pune"
@@ -49,14 +49,14 @@ export function SiteFooter() {
 
           <Reveal delay={100}>
             <h2 className="text-[19px] font-extrabold">Quick Links</h2>
-            <nav className="mt-8 grid gap-4 text-[13px] text-[#d5e0e7]">
+            <nav className="mt-8 max-sm:mt-3 grid max-sm:gap-2 gap-4 text-[13px] text-[#d5e0e7]">
               {quickLinks.map((link) => <a key={link} href={link === "FAQ's" ? "#faqs" : "#"} className="flex items-center gap-3 transition hover:translate-x-1 hover:text-[#54b6ec]"><span className="h-px w-3 bg-[#8fa2ae]" />{link}</a>)}
             </nav>
           </Reveal>
 
           <Reveal delay={200}>
             <h2 className="text-[19px] font-extrabold">Dental Updates</h2>
-            <div className="mt-8 grid gap-5">
+            <div className="mt-8 max-sm:mt-3 grid gap-5">
               {posts.map((post) => <article key={post.title} className="grid grid-cols-[80px_1fr] gap-4">
                 <div className="relative h-[74px] overflow-hidden rounded-[5px]"><Image src={post.image} alt="" fill sizes="80px" className="object-cover" /></div>
                 <div><h3 className="line-clamp-2 text-[13px] leading-5 font-bold">{post.title}</h3><p className="mt-2 text-[11px] font-bold text-[#54b6ec]">▣ {post.date}</p></div>
@@ -66,7 +66,7 @@ export function SiteFooter() {
 
           <Reveal delay={300}>
             <h2 className="text-[19px] font-extrabold">Contact Us</h2>
-            <div className="mt-8 grid gap-5 text-[13px] leading-6 text-[#d5e0e7]">
+            <div className="mt-8 max-sm:mt-3 grid max-sm:gap-1 gap-5 text-[13px] leading-6 text-[#d5e0e7]">
               <ContactRow icon="pin">Zen Square, Office No. 311, 3rd Floor, Sr.No.69/4, Plot B, Panchshil Towers Rd, opp. EON Free Zone Phase 2, Kharadi, Pune, Maharashtra 411014</ContactRow>
               <ContactRow icon="mail">32caredentalpune@gmail.com</ContactRow>
               <ContactRow icon="phone">+91 9975611589</ContactRow>
@@ -74,14 +74,13 @@ export function SiteFooter() {
           </Reveal>
         </div>
 
-        <div className="flex min-h-[58px] items-center justify-between gap-5 border-t border-white/10 text-[12px] text-[#d5e0e7] max-[620px]:flex-col max-[620px]:justify-center max-[620px]:py-5 max-[620px]:text-center">
+        <div className="flex min-h-[58px] items-center justify-between max-sm:gap-2 gap-5 border-t border-white/10 text-[12px] text-[#d5e0e7] max-[620px]:flex-col max-[620px]:justify-center max-[620px]:py-5 max-[620px]:text-center">
           <p>32Care Dental Clinic | Caring for healthier smiles</p>
           <a href="/privacy-policy" className="transition hover:text-[#54b6ec]">Privacy Policy</a>
           <p>© {new Date().getFullYear()} 32Care Dental Clinic | <a href="/privacy-policy" className="transition hover:text-[#54b6ec]">Privacy Policy</a> | All Rights Reserved</p>
         </div>
       </div>
 
-      <a href="#" aria-label="Back to top" className="absolute right-7 bottom-7 grid h-13 w-13 place-items-center rounded-full bg-[#0067ac] text-[27px] text-white  transition hover:-translate-y-1 hover:bg-[#54b6ec]">↑</a>
     </footer>
   );
 }

@@ -7,6 +7,8 @@ import { HairSolutions } from "@/components/HairSolutions";
 import { AboutExperience } from "@/components/AboutExperience";
 import { DentalPromo } from "@/components/DentalPromo";
 import { SiteFooter } from "@/components/SiteFooter";
+import { MobileActionBar } from "@/components/MobileActionBar";
+import { ScrollToTop } from "@/components/ScrollToTop";
 
 export default function Home() {
   return <>
@@ -19,6 +21,7 @@ export default function Home() {
     <DentalPromo />
     <Gallery />
     <SiteFooter />
-
+    <MobileActionBar />
+    <ScrollToTop />
   </>;
 }

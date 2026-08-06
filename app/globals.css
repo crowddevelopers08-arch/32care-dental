@@ -17,6 +17,22 @@ body {
   font-family: "Onest", sans-serif;
 }
 
+@keyframes whatsapp-pulse {
+  0%, 100% { box-shadow: 0 4px 10px rgb(37 211 102 / 35%); transform: scale(1); }
+  50% { box-shadow: 0 0 0 10px rgb(37 211 102 / 0%), 0 4px 14px rgb(37 211 102 / 48%); transform: scale(1.07); }
+}
+
+.whatsapp-pulse {
+  animation: whatsapp-pulse 1.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-pulse {
+    animation: none;
+  }
+}
+
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
