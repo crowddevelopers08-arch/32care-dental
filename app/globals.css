@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Onest", sans-serif;
+  --font-mono: "Onest", sans-serif;
+}
+
+body {
+  font-family: "Onest", sans-serif;
+}
+
+@media (max-width: 620px) {
+  a[href="#consultation-form"],
+  #consultation-form button[type="submit"] {
+    font-size: 15px !important;
+  }
+}
+
+@keyframes procedure-cta-flow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes procedure-cta-shine {
+  0% { transform: translateX(-180%) skewX(-20deg); }
+  55%, 100% { transform: translateX(420%) skewX(-20deg); }
+}
