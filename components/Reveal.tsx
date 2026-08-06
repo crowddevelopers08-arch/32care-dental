@@ -1,6 +1,6 @@
 "use client";
 
-import { Ref, useEffect, useRef, useState } from "react";
+import { createElement, type ElementType, useEffect, useRef, useState } from "react";
 
 const hiddenTransforms = {
   up: "translate-y-8",
@@ -10,7 +10,7 @@ const hiddenTransforms = {
 };
 
 export function Reveal({ children, className, delay = 0, direction = "up", as = "div" }: { children: React.ReactNode; className?: string; delay?: number; direction?: "up" | "down" | "left" | "right"; as?: "div" | "article" | "span" | "header" | "form" }) {
-  const elementRef = useRef<HTMLDivElement>(null);
+  const elementRef = useRef<HTMLElement>(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -27,15 +27,15 @@ export function Reveal({ children, className, delay = 0, direction = "up", as = 
     return () => observer.disconnect();
   }, []);
 
-  const Tag = as;
+  const Tag: ElementType = as;
 
-  return (
-    <Tag
-      ref={elementRef as Ref<HTMLDivElement>}
-      style={{ transitionDelay: visible ? `${delay}ms` : "0ms" }}
-      className={`${className ?? ""} transition-all duration-700 ease-out motion-reduce:transition-none ${visible ? "opacity-100 translate-x-0 translate-y-0" : `opacity-0 ${hiddenTransforms[direction]}`}`}
-    >
-      {children}
-    </Tag>
+  return createElement(
+    Tag,
+    {
+      ref: elementRef,
+      style: { transitionDelay: visible ? `${delay}ms` : "0ms" },
+      className: `${className ?? ""} transition-all duration-700 ease-out motion-reduce:transition-none ${visible ? "opacity-100 translate-x-0 translate-y-0" : `opacity-0 ${hiddenTransforms[direction]}`}`,
+    },
+    children,
   );
 }
