@@ -68,8 +68,8 @@ export function DentalPromo() {
         </div>
 
         <div className="order-1 max-[620px]:contents">
-          <Reveal direction="right" className="max-[620px]:order-1"><SectionLabel light align="start">Frequently Asked Questions</SectionLabel></Reveal>
-          <Reveal delay={80} direction="left" className="max-[620px]:order-2"><h2 className="mt-2 lg:mt-2 lg:mb-5 max-w-[700px] text-[30px] leading-[1.22] tracking-[-.6px] text-white max-[620px]:mt-0 max-[620px]:text-[23px]">Questions Patients Commonly Ask About <Underline color="#8fe0ff" className="font-bold text-[#8fe0ff]">Root Canal Treatment</Underline></h2></Reveal>
+          <Reveal direction="right" className="min-w-0 max-[620px]:order-1"><SectionLabel light align="start" compact>Frequently Asked Questions</SectionLabel></Reveal>
+          <Reveal delay={80} direction="left" className="min-w-0 max-[620px]:order-2"><h2 className="mt-2 lg:mt-2 lg:mb-5 max-w-[700px] text-[30px] leading-[1.22] tracking-[-.6px] text-white max-[620px]:mt-0 max-[620px]:text-[23px]">Questions Patients Commonly Ask About <Underline color="#8fe0ff" className="font-bold text-[#8fe0ff]">Root Canal Treatment</Underline></h2></Reveal>
 
           <div className="mt-8 grid grid-cols-2 items-start gap-3 max-[620px]:order-4 max-[620px]:mt-0 max-[620px]:grid-cols-1">
             {features.map((feature, index) => {
