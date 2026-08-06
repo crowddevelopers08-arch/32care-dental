@@ -2,6 +2,10 @@
 
 import Image from "next/image";
 import { useRef } from "react";
+import { Reveal } from "./Reveal";
+import { Underline } from "./Underline";
+
+const directions = ["left", "up", "right"] as const;
 
 const results = [
   {
@@ -33,28 +37,31 @@ export function BeforeAfter() {
 
   return <section id="before-after" className="relative scroll-mt-5 overflow-hidden bg-[#f3f9fd] px-4 py-12 font-['Onest',sans-serif] sm:px-8 sm:py-16 lg:px-12 lg:py-20">
     <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-[#70c8ef]/15 blur-3xl" />
-    <div className="absolute -right-24 -bottom-24 h-80 w-80 rounded-full bg-[#0876b5]/10 blur-3xl" />
+    <div className="absolute -right-24 -bottom-24 h-80 w-80 rounded-full bg-[#0067ac]/10 blur-3xl" />
     <div className="relative mx-auto max-w-[1500px]">
-      <div className="mx-auto mb-7 max-w-3xl text-center sm:mb-8">
-        <div className="mx-auto flex items-center justify-center gap-5 text-[12px] font-bold tracking-[.12em] text-[#0876b5] uppercase max-[620px]:gap-2.5">
+      <Reveal className="mx-auto mb-7 max-w-3xl text-center sm:mb-8" direction="right">
+        <div className="mx-auto flex items-center justify-center gap-5 text-[12px] font-bold tracking-[.12em] text-[#0067ac] uppercase max-[620px]:gap-2.5 lg:mb-2 ">
           <PulseDivider reverse />
           <span className="whitespace-nowrap">Before &amp; After</span>
           <PulseDivider />
         </div>
-        <h2 className="mt-1 text-[30px] font-medium tracking-[.2px] text-[#092b4c] max-[620px]:text-[23px]">From Tooth Discomfort To Comfortable Smiling Again</h2>
-      </div>
+        <h2 className="mt-1 lg:mt-2 text-[30px] font-medium tracking-[.2px] text-[#092b4c] max-[620px]:text-[23px]">
+          From Tooth Discomfort To{" "}
+          <Underline className="font-bold text-[#0067ac]">Comfortable Smiling Again</Underline>
+        </h2>
+      </Reveal>
 
       <div className="relative">
       <div ref={carousel} className="flex snap-x snap-mandatory gap-0 overflow-x-auto pb-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:grid md:grid-cols-2 md:gap-7 md:overflow-visible md:pb-0 xl:grid-cols-3">
-        {results.map((result, index) => <article key={result.src} className="group relative min-w-full snap-center px-0 transition duration-500 hover:-translate-y-2 md:min-w-0">
+        {results.map((result, index) => <Reveal as="article" key={result.src} delay={index * 120} direction={directions[index % directions.length]} className="group relative min-w-full snap-center px-0 transition duration-500 hover:-translate-y-2 md:min-w-0">
           <div className="relative flex h-[400px] w-full items-center justify-center overflow-hidden rounded-[20px] max-[620px]:h-auto max-[620px]:rounded-[16px]">
             <Image src={result.src} alt={`${result.title} before and after dental treatment result`} width={result.width} height={result.height} className="block h-full w-full object-contain transition duration-700 group-hover:scale-[1.025] max-[620px]:h-auto" sizes="(max-width: 620px) calc(100vw - 32px), (max-width: 1280px) 50vw, 33vw" priority={index === 0} />
             <span className="absolute top-4 left-4 grid h-10 w-10 place-items-center rounded-full bg-[#073576] text-sm font-extrabold text-white  max-[620px]:top-3 max-[620px]:left-3 max-[620px]:h-9 max-[620px]:w-9 max-[620px]:text-[12px]">0{index + 1}</span>
           </div>
-        </article>)}
+        </Reveal>)}
       </div>
-      <button type="button" onClick={() => moveCarousel(-1)} aria-label="Previous result" className="absolute top-1/2 -left-3 z-20 grid h-11 w-11 -translate-y-1/2 place-items-center rounded-full border-2 border-white/70 bg-[#073576]/95 text-[30px] leading-none text-white  backdrop-blur-sm transition hover:bg-[#0876b5] active:scale-90 md:hidden">‹</button>
-      <button type="button" onClick={() => moveCarousel(1)} aria-label="Next result" className="absolute top-1/2 -right-3 z-20 grid h-11 w-11 -translate-y-1/2 place-items-center rounded-full border-2 border-white/70 bg-[#073576]/95 text-[30px] leading-none text-white  backdrop-blur-sm transition hover:bg-[#0876b5] active:scale-90 md:hidden">›</button>
+      <button type="button" onClick={() => moveCarousel(-1)} aria-label="Previous result" className="absolute top-1/2 -left-3 z-20 grid h-11 w-11 -translate-y-1/2 place-items-center rounded-full border-2 border-white/70 bg-[#073576]/95 text-[30px] leading-none text-white  backdrop-blur-sm transition hover:bg-[#0067ac] active:scale-90 md:hidden">‹</button>
+      <button type="button" onClick={() => moveCarousel(1)} aria-label="Next result" className="absolute top-1/2 -right-3 z-20 grid h-11 w-11 -translate-y-1/2 place-items-center rounded-full border-2 border-white/70 bg-[#073576]/95 text-[30px] leading-none text-white  backdrop-blur-sm transition hover:bg-[#0067ac] active:scale-90 md:hidden">›</button>
       </div>
 
       <p className="mx-auto mt-6 max-w-[680px] px-2 text-center text-[16px] leading-[1.55] text-[#2b201b] sm:mt-8">Individual treatment results may vary. Images are shared for treatment-result illustration.</p>
@@ -64,10 +71,10 @@ export function BeforeAfter() {
 
 function PulseDivider({reverse=false}:{reverse?:boolean}) {
   return <span className={`flex w-14 items-center gap-2 max-[620px]:w-10 max-[620px]:gap-1.5 ${reverse ? "flex-row-reverse" : ""}`} aria-hidden="true">
-    <i className="h-px flex-1 bg-gradient-to-r from-[#0876b5]/15 to-[#0876b5]" />
-    <i className="relative grid h-4 w-4 shrink-0 place-items-center rounded-full border border-[#0876b5]/35">
-      <i className="absolute h-2.5 w-2.5 animate-ping rounded-full bg-[#0876b5]/40 motion-reduce:animate-none" />
-      <i className="relative h-1.5 w-1.5 rounded-full bg-[#0876b5]" />
+    <i className="h-px flex-1 bg-gradient-to-r from-[#0067ac]/15 to-[#0067ac]" />
+    <i className="relative grid h-4 w-4 shrink-0 place-items-center rounded-full border border-[#0067ac]/35">
+      <i className="absolute h-2.5 w-2.5 animate-ping rounded-full bg-[#0067ac]/40 motion-reduce:animate-none" />
+      <i className="relative h-1.5 w-1.5 rounded-full bg-[#0067ac]" />
     </i>
   </span>;
 }

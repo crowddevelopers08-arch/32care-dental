@@ -1,5 +1,9 @@
 import Image from "next/image";
+import { Reveal } from "./Reveal";
 import { SectionLabel } from "./SectionLabel";
+import { Underline } from "./Underline";
+
+const directions = ["left", "right", "up", "down"] as const;
 
 const photos = [
   { src: "/Pics for website1/DSC_2591.JPG", alt: "Kosmo Dental Clinic reception area", cell: "col-span-3 row-span-6 col-start-1 row-start-1" },
@@ -14,16 +18,16 @@ const photos = [
 export function Gallery() {
   return <section className="bg-[#f3f9fd] px-5 py-12 font-['Onest',sans-serif] text-[#092b4c] max-[620px]:hidden sm:px-8 sm:py-16 lg:px-12">
     <div className="mx-auto max-w-[1350px]">
-      <div className="text-center">
+      <Reveal className="text-center" direction="left">
         <SectionLabel>Our Clinic</SectionLabel>
-        <h2 className="mt-1 text-[26px] font-medium tracking-[.2px] max-[620px]:text-[23px]">A Look Inside Kosmo Dental Clinic</h2>
-      </div>
+        <h2 className="mt-1 lg:mt-2 lg:mb-5 text-[30px] font-medium tracking-[.2px] max-[620px]:text-[23px]">A Look Inside <Underline className="font-bold text-[#0067ac]">Kosmo Dental Clinic</Underline></h2>
+      </Reveal>
 
       <div className="mt-8 grid h-[560px] grid-cols-12 grid-rows-6 gap-[7px] max-[900px]:h-auto max-[900px]:grid-cols-2 max-[900px]:grid-rows-none max-[900px]:gap-3">
-        {photos.map((photo) => <div key={photo.src} className={`group relative overflow-hidden rounded-[16px] bg-[#e8f5fc]  ${photo.cell} max-[900px]:col-span-1 max-[900px]:row-span-1 max-[900px]:col-start-auto max-[900px]:row-start-auto max-[900px]:aspect-square`}>
+        {photos.map((photo, index) => <Reveal key={photo.src} delay={index * 90} direction={directions[index % directions.length]} className={`group relative overflow-hidden rounded-[16px] bg-[#e8f5fc]  ${photo.cell} max-[900px]:col-span-1 max-[900px]:row-span-1 max-[900px]:col-start-auto max-[900px]:row-start-auto max-[900px]:aspect-square`}>
           <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 900px) 46vw, 33vw" className="object-cover transition duration-700 group-hover:scale-110" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#073576]/55 via-transparent to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
-        </div>)}
+        </Reveal>)}
       </div>
     </div>
   </section>;

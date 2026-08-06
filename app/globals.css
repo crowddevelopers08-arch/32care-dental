@@ -17,19 +17,18 @@ body {
   font-family: "Onest", sans-serif;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+select:-webkit-autofill {
+  -webkit-text-fill-color: #11263c;
+  -webkit-box-shadow: 0 0 0 1000px #fbfdfe inset;
+  box-shadow: 0 0 0 1000px #fbfdfe inset;
+}
+
 @media (max-width: 620px) {
   a[href="#consultation-form"],
   #consultation-form button[type="submit"] {
     font-size: 15px !important;
   }
-}
-
-@keyframes procedure-cta-flow {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-
-@keyframes procedure-cta-shine {
-  0% { transform: translateX(-180%) skewX(-20deg); }
-  55%, 100% { transform: translateX(420%) skewX(-20deg); }
 }
