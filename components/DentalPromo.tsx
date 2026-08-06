@@ -53,16 +53,16 @@ export function DentalPromo() {
     <section id="faqs" className="relative overflow-hidden border-y border-[#e4eef5] bg-[linear-gradient(118deg,#2d78bb_0%,#086cae_54%,#083a75_100%)] px-5 py-12 font-['Onest',sans-serif] text-white sm:px-8 lg:px-12 lg:py-16">
       <div className="absolute inset-0 opacity-20 [background:linear-gradient(45deg,transparent_0_24%,rgba(220,234,255,.7)_24%_30%,transparent_30%_48%,rgba(84,182,236,.55)_48%_54%,transparent_54%)]" />
       <div className="relative mx-auto grid max-w-[1360px] items-center gap-14 max-[620px]:gap-6 lg:grid-cols-[730px_1fr] lg:gap-24">
-        <div className="relative order-2 mx-auto h-[610px] w-full max-w-[560px] max-[620px]:order-3 max-[620px]:h-[500px]">
-          <Reveal delay={0} direction="left" className="absolute top-0 left-0 h-[535px] w-[79%] overflow-hidden bg-[#e8f5fc]  max-[620px]:h-[430px] max-[620px]:w-[84%]">
+        <div className="relative order-2 mx-auto h-[610px] w-full max-w-[560px] max-[620px]:order-3 max-[620px]:h-[430px]">
+          <Reveal delay={0} direction="left" className="absolute top-0 left-0 h-[535px] w-[79%] overflow-hidden bg-[#e8f5fc] max-[620px]:h-[400px] max-[620px]:w-[84%]">
             <Image src="/Pics for website1/DSC_2673.JPG" alt="Experienced dentist at 32Care Dental Clinic" fill sizes="(max-width: 620px) 84vw, 445px" className="object-cover object-top" />
           </Reveal>
 
-          <Reveal delay={150} direction="down" className="absolute right-0 bottom-0 z-10 h-[348px] w-[63%] overflow-hidden border-[5px] border-white bg-[#e8f5fc]  max-[620px]:h-[285px] max-[620px]:w-[69%]">
+          <Reveal delay={150} direction="down" className="absolute right-0 bottom-0 z-10 h-[348px] w-[63%] overflow-hidden border-[5px] border-white bg-[#e8f5fc] max-[620px]:h-[240px] max-[620px]:w-[69%]">
             <Image src="/Pics for website1/DSC_2612.JPG" alt="Doctor discussing personalised dental care" fill sizes="(max-width: 620px) 69vw, 350px" className="object-cover object-right" />
           </Reveal>
 
-          <Reveal delay={300} direction="right" className="absolute top-[33px] -right-6 z-20 flex min-h-[290px] w-[220px] flex-col justify-center rounded-[6px] bg-[#0067ac] px-10 text-white  max-[620px]:top-[62px] max-[620px]:w-[175px] max-[620px]:min-h-[235px] max-[620px]:px-7">
+          <Reveal delay={300} direction="right" className="absolute top-[33px] -right-6 z-20 h-[290px] w-[220px] overflow-hidden rounded-[6px] bg-[#0067ac] text-white max-[620px]:top-[28px] max-[620px]:right-0 max-[620px]:h-[195px] max-[620px]:w-[150px]">
             <Image src="/Pics for website1/DSC_2666.JPG" alt="Doctor discussing personalised dental care" fill sizes="(max-width: 620px) 69vw, 350px" className="object-cover object-right" />
           </Reveal>
         </div>

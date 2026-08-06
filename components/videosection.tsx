@@ -42,7 +42,7 @@ export default function VideoSection() {
 
       <Reveal className="relative mx-auto max-w-md lg:hidden">
         <div className="relative h-[560px] overflow-hidden rounded-[24px] bg-black  max-[620px]:h-[500px]">
-          {videos.map((video,index) => <video key={video.id} ref={element => { videoRefs.current[index] = element; }} src={video.videoUrl} aria-label={video.title} className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ${index === currentSlide ? "z-[1] opacity-100" : "pointer-events-none opacity-0"}`} controls preload="metadata" playsInline onPlay={() => handlePlay(index)} />)}
+          {videos.map((video,index) => <video key={video.id} ref={element => { videoRefs.current[index] = element; }} src={video.videoUrl} aria-label={video.title} className={`absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-500 ${index === currentSlide ? "z-[1] opacity-100" : "pointer-events-none opacity-0"}`} controls preload="metadata" playsInline onPlay={() => handlePlay(index)} />)}
         </div>
         <button type="button" onClick={() => changeSlide(currentSlide - 1)} aria-label="Previous video" className="absolute top-1/2 -left-3 z-[2] grid h-11 w-11 -translate-y-1/2 place-items-center rounded-full bg-[#073576]/90 text-2xl text-white  transition hover:scale-110">‹</button>
         <button type="button" onClick={() => changeSlide(currentSlide + 1)} aria-label="Next video" className="absolute top-1/2 -right-3 z-[2] grid h-11 w-11 -translate-y-1/2 place-items-center rounded-full bg-[#073576]/90 text-2xl text-white  transition hover:scale-110">›</button>

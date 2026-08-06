@@ -38,15 +38,15 @@ export function HairSolutions() {
         <h2 className="mt-1 lg:mt-2 text-center text-[30px] font-medium tracking-[.2px] max-[620px]:text-[23px]">Advanced Root Canal Solutions For <Underline className="font-bold text-[#0067ac]">Every Dental Need</Underline></h2>
       </Reveal>
 
-      <div ref={carousel} onScroll={(event) => setActiveSlide(Math.round(event.currentTarget.scrollLeft / event.currentTarget.clientWidth))} className="mt-6 grid grid-cols-5 gap-x-5 gap-y-8 max-[1100px]:grid-cols-3 max-[700px]:grid-cols-2 max-[620px]:flex max-[620px]:snap-x max-[620px]:snap-mandatory max-[620px]:gap-0 max-[620px]:overflow-x-auto max-[620px]:pb-2 max-[620px]:[scrollbar-width:none] max-[620px]:[&::-webkit-scrollbar]:hidden">
-        {solutions.map((solution, index) => <Reveal as="article" key={solution.title} delay={(index % 5) * 90} direction={directions[index % directions.length]} className="text-center max-[620px]:min-w-full max-[620px]:snap-center max-[620px]:px-3">
+      <div ref={carousel} onScroll={(event) => setActiveSlide(Math.round(event.currentTarget.scrollLeft / event.currentTarget.clientWidth))} className="mt-6 grid grid-cols-5 gap-x-5 gap-y-8 max-[1100px]:grid-cols-3 max-[700px]:grid-cols-2 max-[620px]:mt-4 max-[620px]:flex max-[620px]:snap-x max-[620px]:snap-mandatory max-[620px]:gap-0 max-[620px]:overflow-x-auto max-[620px]:pb-1 max-[620px]:[scrollbar-width:none] max-[620px]:[&::-webkit-scrollbar]:hidden">
+        {solutions.map((solution, index) => <Reveal as="article" key={solution.title} delay={(index % 5) * 90} direction={directions[index % directions.length]} className="text-center max-[620px]:w-full max-[620px]:shrink-0 max-[620px]:snap-center max-[620px]:px-3">
           <div className="mx-auto h-[112px] w-[112px] rounded-full border-[5px] border-[#c9e6f5] bg-cover bg-center bg-no-repeat " style={{backgroundImage:`url(${solution.image})`}} role="img" aria-label={solution.title} />
-          <h3 className="mx-auto mt-3 max-w-[210px] text-[17px] leading-tight font-bold">{solution.title}</h3>
-          <p className="mx-auto mt-2 max-w-[210px] text-[14px] leading-[1.55] text-[#38536b]">{solution.description}</p>
+          <h3 className="mx-auto mt-3 max-w-[210px] text-[17px] leading-tight font-bold max-[620px]:max-w-[290px]">{solution.title}</h3>
+          <p className="mx-auto mt-2 max-w-[210px] text-[14px] leading-[1.55] text-[#38536b] max-[620px]:max-w-[290px]">{solution.description}</p>
         </Reveal>)}
       </div>
 
-      <div className="mt-5 max-sm:mt-9 hidden items-center justify-center gap-4 max-[620px]:flex">
+      <div className="mt-4 hidden items-center justify-center gap-4 max-[620px]:flex">
         <button type="button" onClick={() => goToSlide(activeSlide - 1)} aria-label="Previous treatment" disabled={activeSlide === 0} className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-[#073576] text-white  transition active:scale-90 disabled:cursor-not-allowed disabled:opacity-35">
           <svg viewBox="0 0 20 20" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m12.5 4.5-5 5.5 5 5.5" /></svg>
         </button>
@@ -58,7 +58,7 @@ export function HairSolutions() {
         </button>
       </div>
 
-      <Reveal className="mt-8 flex justify-center">
+      <Reveal className="mt-6 flex justify-center max-[620px]:mt-5">
         <a href="#consultation-form" className="group relative inline-flex min-h-[48px] items-center justify-center overflow-hidden rounded-full border-2 border-[#073576] px-7 text-center text-[15px] font-bold text-[#073576] transition-all duration-300 hover:-translate-y-1 max-[620px]:min-h-[54px] max-[620px]:w-full max-[620px]:px-3 max-[620px]:text-[12px] max-[620px]:leading-tight">
           <span aria-hidden="true" className="absolute inset-0 origin-left scale-x-0 bg-[#073576] transition-transform duration-500 ease-out group-hover:scale-x-100" />
           <span className="relative z-10 max-[620px]:hidden transition-colors duration-500 group-hover:text-white">Find The Right Root Canal Solution For Your Tooth</span>
