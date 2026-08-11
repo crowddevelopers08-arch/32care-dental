@@ -1,11 +1,19 @@
 import Image from "next/image";
 import { Reveal } from "./Reveal";
 import { SectionLabel } from "./SectionLabel";
+import { AnimatedCounter } from "./AnimatedCounter";
 
 const benefits = [
   "Expert Implant Consultation",
   "Advanced Dental Technology",
   "Personalised Treatment Plans",
+];
+
+const trustStats = [
+  { value: 18, label: "Years of Experience" },
+  { value: 200, suffix: "+", label: "Successful Implant Procedures" },
+  { value: 7000, suffix: "+", label: "Happy Patients" },
+  { value: 5, label: "Google Ratings", rating: true },
 ];
 
 export function SeniorCareHero() {
@@ -25,7 +33,7 @@ export function SeniorCareHero() {
       <div aria-hidden="true" className="absolute -right-[330px] top-[6px] h-[880px] w-[680px] rounded-[50%] bg-[linear-gradient(145deg,rgba(232,245,252,.42)_0%,rgba(248,252,255,.2)_68%)] max-[620px]:hidden" />
 
       <div className="relative z-10 mx-auto grid min-h-[865px] max-w-[1660px] grid-cols-1 px-6 py-16 max-[620px]:min-h-0 max-[620px]:px-5 max-[620px]:py-10 sm:px-10 lg:h-full lg:min-h-0 lg:grid-cols-[47%_53%] lg:px-12 lg:py-0 xl:px-16">
-        <div className="relative z-30 flex flex-col justify-center max-[620px]:contents lg:pb-5">
+        <div className="relative z-30 min-w-0 flex flex-col justify-center max-[620px]:contents lg:pb-5">
           <Reveal direction="down" className="mb-4 max-[620px]:order-1 max-[620px]:mb-3 lg:mb-3">
             <SectionLabel align="start">Advanced Implant Care in Pune</SectionLabel>
           </Reveal>
@@ -61,7 +69,26 @@ export function SeniorCareHero() {
             </div>
           </Reveal>
 
-          <Reveal delay={400} direction="up" className="mt-8 max-[620px]:order-6 max-[620px]:mt-6 lg:mt-5">
+          <Reveal delay={400} direction="up" className="mt-4 w-full min-w-0 max-w-full max-[620px]:order-6 max-[620px]:mt-6 lg:w-[90%] lg:max-w-[600px] xl:max-w-[630px]">
+            <aside aria-label="32Care dental implant expertise statistics" className="w-full min-w-0 max-w-full overflow-hidden rounded-[16px] border border-[#b9def3] bg-white/95 shadow-[0_10px_26px_rgba(7,53,118,.07)] backdrop-blur-sm">
+              <h2 className="flex min-h-[40px] w-full items-center border-b border-[#d5e8f3] px-5 text-[13px] leading-snug font-bold text-[#092b4c] max-[380px]:min-h-[46px] max-[380px]:px-4 max-[380px]:text-[12px]">
+                <span className="block w-full text-left">Trusted Dental Expertise For <span className="text-[#0876b5]">Your Smile Restoration</span></span>
+              </h2>
+              <div className="grid min-w-0 grid-cols-2 sm:[grid-template-columns:repeat(4,minmax(0,1fr))]">
+                {trustStats.map((stat, index) => (
+                  <div key={stat.label} className={`grid min-h-[70px] min-w-0 grid-rows-[24px_28px] place-items-center content-center overflow-hidden px-1.5 py-2 text-center ${index % 2 === 1 ? "max-sm:border-l max-sm:border-[#c9e6f5]" : ""} ${index > 1 ? "max-sm:border-t max-sm:border-[#c9e6f5]" : ""} ${index > 0 ? "sm:border-l sm:border-[#c9e6f5]" : ""}`}>
+                    <strong className="flex h-6 items-center justify-center gap-1 self-start text-[19px] leading-none font-extrabold whitespace-nowrap text-[#092b4c]">
+                      <AnimatedCounter end={stat.value} suffix={stat.suffix} />
+                      {stat.rating && <svg viewBox="0 0 24 24" className="h-[18px] w-[18px] shrink-0 fill-[#f5c518] drop-shadow-[0_2px_2px_rgba(151,104,0,.22)]" aria-label="star rating"><path d="m12 2.2 3 6.1 6.7 1-4.9 4.7 1.2 6.7-6-3.2-6 3.2 1.2-6.7-4.9-4.7 6.7-1 3-6.1Z" /></svg>}
+                    </strong>
+                    <span className="flex h-7 min-w-0 max-w-full items-start justify-center px-1 pt-1 text-[9px] leading-[1.25] font-bold break-words whitespace-normal text-[#38536b]">{stat.label}</span>
+                  </div>
+                ))}
+              </div>
+            </aside>
+          </Reveal>
+
+          <Reveal delay={500} direction="up" className="mt-3 max-[620px]:order-7 max-[620px]:mt-5 lg:mt-3">
             <a href="#consultation-form" data-open-consultation-modal className="group inline-flex min-h-16 w-fit items-center rounded-full bg-[#073576] py-1.5 pl-7 pr-2 text-[14px] font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#0067ac] max-[620px]:min-h-[60px] max-[620px]:w-full max-[620px]:justify-between max-[620px]:gap-2 max-[620px]:py-1.5 max-[620px]:pr-1.5 max-[620px]:pl-5 sm:text-[15px] lg:min-h-[54px] lg:pl-6 lg:text-[13px]">
               <span className="max-[620px]:hidden">BOOK YOUR DENTAL IMPLANT CONSULTATION</span>
               <span className="hidden whitespace-nowrap text-left text-[11px] leading-none font-bold max-[620px]:block max-[380px]:text-[10px]">BOOK YOUR DENTAL IMPLANT CONSULTATION</span>
