@@ -74,21 +74,53 @@ function getSheetWebhookUrl() {
   return (process.env.GOOGLE_APPS_SCRIPT_URL || '').trim();
 }
 
+function getSheetName(source: string) {
+  const normalizedSource = source.trim().toLowerCase();
+
+  if (normalizedSource === 'generic consult') return 'genericleads';
+  if (normalizedSource === 'dental implant consultation') return 'Dental-Implant-Leads';
+  return 'Root-Canal-Leads';
+}
+
+function getSheetData(body: SubmissionBody, timestamp: string, telecrmStatus: string) {
+  const isDentalImplantForm = body.source.trim().toLowerCase() === 'dental implant consultation';
+
+  if (isDentalImplantForm) {
+    return {
+      headers: ['Timestamp', 'Source', 'Name', 'Phone', 'Concern', 'URL', 'TeleCRM'],
+      row: [
+        timestamp,
+        body.source,
+        body.name,
+        body.phone,
+        body.concern,
+        body.pageUrl,
+        telecrmStatus,
+      ],
+    };
+  }
+
+  return {
+    headers: HEADERS,
+    row: [
+      timestamp,
+      body.source,
+      body.name,
+      body.phone,
+      body.email,
+      body.concern,
+      body.pageUrl,
+      telecrmStatus,
+    ],
+  };
+}
+
 async function pushToSheet(body: SubmissionBody, timestamp: string, telecrmStatus: string) {
   const url = getSheetWebhookUrl();
   if (!url) return null;
 
-  const row = [
-    timestamp,
-    body.source,
-    body.name,
-    body.phone,
-    body.email,
-    body.concern,
-    body.pageUrl,
-    telecrmStatus,
-  ];
-  const sheetName = body.source.toLowerCase() === 'generic consult' ? 'genericleads' : 'Submissions';
+  const { headers, row } = getSheetData(body, timestamp, telecrmStatus);
+  const sheetName = getSheetName(body.source);
 
   const res = await fetch(url, {
     method: 'POST',
@@ -104,7 +136,7 @@ async function pushToSheet(body: SubmissionBody, timestamp: string, telecrmStatu
       url: body.pageUrl,
       telecrm: telecrmStatus,
       sheetName,
-      headers: HEADERS,
+      headers,
       row,
     }),
   });
