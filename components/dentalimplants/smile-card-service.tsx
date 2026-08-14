@@ -62,7 +62,7 @@ export default function ServicesGrid() {
   const [activeId, setActiveId] = useState<number>(services[0].id);
 
   return (
-    <section id="services" className="relative w-full scroll-mt-[78px] overflow-hidden bg-[linear-gradient(118deg,#2d78bb_0%,#086cae_54%,#083a75_100%)] px-5 py-16 font-[Onest,sans-serif] text-white sm:px-10 md:px-16 lg:py-24">
+    <section id="services" className="relative w-full scroll-mt-[78px] overflow-hidden bg-[linear-gradient(118deg,#2d78bb_0%,#086cae_54%,#083a75_100%)] px-5 py-8 font-[Onest,sans-serif] text-white sm:px-10 md:px-16 lg:py-10">
       <div className="absolute inset-0 opacity-20 [background:linear-gradient(45deg,transparent_0_24%,rgba(220,234,255,.7)_24%_30%,transparent_30%_48%,rgba(84,182,236,.55)_48%_54%,transparent_54%)]" />
       <div className="relative mx-auto max-w-[1450px]">
         <Reveal className="mb-6 text-center lg:mb-8" direction="left">

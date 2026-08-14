@@ -11,6 +11,7 @@ const videos = [
   { id: 1, title: "Doctor Explaining Treatment Evaluation", videoUrl: "https://res.cloudinary.com/jfmvvhot/video/upload/v1786006040/20260324_205957_azcdfc.mp4" },
   { id: 2, title: "Advanced Treatment Overview", videoUrl: "https://res.cloudinary.com/jfmvvhot/video/upload/v1786005942/32Care_Dental_clinic_video_testimonial_hlhqnm.mp4" },
   { id: 3, title: "In-Clinic Treatment Process", videoUrl: "https://res.cloudinary.com/jfmvvhot/video/upload/v1785926865/DSC_3965_squished_y5kjb4.mp4" },
+  { id: 4, title: "Patient Success Story", videoUrl: "/1001442866.mp4" },
 ];
 
 export default function VideoSection() {
@@ -46,9 +47,9 @@ export default function VideoSection() {
         <div className="mt-5 flex justify-center gap-2">{videos.map((video,index) => <button type="button" key={video.id} onClick={() => changeSlide(index)} aria-label={`Show video ${index + 1}`} className={`h-2.5 rounded-full bg-white transition-all ${index === currentSlide ? "w-9" : "w-2.5 opacity-35"}`} />)}</div>
       </Reveal>
 
-      <div className="hidden grid-cols-3 gap-7 lg:grid">
+      <div className="hidden grid-cols-2 gap-7 lg:grid xl:grid-cols-4">
         {videos.map((video,index) => <Reveal as="article" key={video.id} delay={index * 130} direction={directions[index % directions.length]} className="group overflow-hidden rounded-[24px] bg-black  transition duration-500 hover:-translate-y-2 ">
-          <video ref={element => { videoRefs.current[index + videos.length] = element; }} src={video.videoUrl} aria-label={video.title} className="h-[580px] w-full object-cover" controls preload="metadata" playsInline onPlay={() => handlePlay(index + videos.length)} />
+          <video ref={element => { videoRefs.current[index + videos.length] = element; }} src={video.videoUrl} aria-label={video.title} className="h-[580px] w-full object-cover xl:h-[420px]" controls preload="metadata" playsInline onPlay={() => handlePlay(index + videos.length)} />
         </Reveal>)}
       </div>
 

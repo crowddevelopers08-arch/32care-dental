@@ -103,7 +103,8 @@ export function SeniorCareHero() {
           <span aria-hidden="true" className="absolute left-[66%] top-[6.5%] z-10 text-[82px] font-light leading-none text-[#c9e6f5] max-[620px]:hidden">+</span>
 
           <Reveal delay={0} direction="left" className="absolute bottom-[5%] left-[5%] top-[6%] w-[58%] overflow-hidden rounded-[48%_48%_48%_48%/32%_32%_32%_32%] bg-white shadow-[0_2px_12px_rgba(7,53,118,.06)] max-[620px]:inset-0 max-[620px]:h-[420px] max-[620px]:w-full max-[620px]:rounded-[30px] max-[620px]:border-4 max-[620px]:border-white">
-            <Image src="/Pics for website1/1.jpg" alt="Dental implant specialist at 32Care Dental Clinic in Pune" fill preload sizes="(max-width: 1024px) 70vw, 520px" className="object-cover object-[58%_center]" />
+            <Image src="/Pics for website1/DSC_2598.jpg" alt="Dental implant specialist at 32Care Dental Clinic in Pune" fill preload sizes="(max-width: 1024px) 70vw, 520px" className="object-cover object-[58%_center] max-[620px]:hidden" />
+            <Image src="/Pics for website1/DSC_2623.JPG" alt="Dental implant specialist at 32Care Dental Clinic in Pune" fill fetchPriority="high" quality={90} sizes="640px" className="hidden object-cover object-center max-[620px]:block" />
           </Reveal>
 
           <Reveal delay={150} direction="down" className="absolute -right-[12%] bottom-[4%] top-[19%] w-[43%] overflow-hidden rounded-tl-[48%] bg-white max-[620px]:hidden">
