@@ -39,7 +39,7 @@ export default function VideoSection() {
       </Reveal>
 
       <Reveal className="relative mx-auto max-w-md lg:hidden">
-        <div className="relative h-[560px] overflow-hidden rounded-[24px] bg-black  max-[620px]:h-[500px]">
+        <div className="relative h-[560px] overflow-hidden rounded-[24px] bg-black  max-[620px]:h-[684px]">
           {videos.map((video,index) => <video key={video.id} ref={element => { videoRefs.current[index] = element; }} src={video.videoUrl} aria-label={video.title} className={`absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-500 ${index === currentSlide ? "z-[1] opacity-100" : "pointer-events-none opacity-0"}`} controls preload="metadata" playsInline onPlay={() => handlePlay(index)} />)}
         </div>
         <button type="button" onClick={() => changeSlide(currentSlide - 1)} aria-label="Previous video" className="absolute top-1/2 -left-3 z-[2] grid h-11 w-11 -translate-y-1/2 place-items-center rounded-full bg-[#073576]/90 text-2xl text-white  transition hover:scale-110">‹</button>
@@ -49,7 +49,7 @@ export default function VideoSection() {
 
       <div className="hidden grid-cols-2 gap-7 lg:grid xl:grid-cols-4">
         {videos.map((video,index) => <Reveal as="article" key={video.id} delay={index * 130} direction={directions[index % directions.length]} className="group overflow-hidden rounded-[24px] bg-black  transition duration-500 hover:-translate-y-2 ">
-          <video ref={element => { videoRefs.current[index + videos.length] = element; }} src={video.videoUrl} aria-label={video.title} className="h-[580px] w-full object-cover xl:h-[420px]" controls preload="metadata" playsInline onPlay={() => handlePlay(index + videos.length)} />
+          <video ref={element => { videoRefs.current[index + videos.length] = element; }} src={video.videoUrl} aria-label={video.title} className="h-[580px] w-full object-cover xl:h-[520px]" controls preload="metadata" playsInline onPlay={() => handlePlay(index + videos.length)} />
         </Reveal>)}
       </div>
 

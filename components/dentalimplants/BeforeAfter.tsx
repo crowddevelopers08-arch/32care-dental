@@ -25,7 +25,7 @@ const results = [
   },
   {
     src: "/1001386360.jpg.jpeg",
-    title: "Broken Tooth Restoration",
+    title: "Full Mouth Smile design-Veneers",
     description: "A fractured front tooth restored to a natural, complete smile.",
   },
   {
