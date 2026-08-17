@@ -62,9 +62,9 @@ export function DentalPromo() {
             <Image src="/Pics for website1/DSC_2612.JPG" alt="Doctor discussing personalised dental care" fill sizes="(max-width: 620px) 69vw, 350px" className="object-cover object-right" />
           </Reveal>
 
-          <Reveal delay={300} direction="right" className="absolute top-[33px] -right-6 z-20 h-[290px] w-[220px] overflow-hidden rounded-[6px] bg-[#0067ac] text-white max-[620px]:top-[28px] max-[620px]:right-0 max-[620px]:h-[195px] max-[620px]:w-[150px]">
+          {/* <Reveal delay={300} direction="right" className="absolute top-[33px] -right-6 z-20 h-[290px] w-[220px] overflow-hidden rounded-[6px] bg-[#0067ac] text-white max-[620px]:top-[28px] max-[620px]:right-0 max-[620px]:h-[195px] max-[620px]:w-[150px]">
             <Image src="/Pics for website1/DSC_2666.JPG" alt="Doctor discussing personalised dental care" fill sizes="(max-width: 620px) 69vw, 350px" className="object-cover object-right" />
-          </Reveal>
+          </Reveal> */}
         </div>
 
         <div className="order-1 max-[620px]:contents">
