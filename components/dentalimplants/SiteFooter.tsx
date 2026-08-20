@@ -20,7 +20,7 @@ export function SiteFooter() {
     <footer className="relative bg-[#102532] px-5 pt-12 font-['Onest',sans-serif] text-white sm:px-8 lg:px-12">
       <div className="mx-auto max-w-[1315px]">
         <div className="grid items-center max-sm:gap-4 gap-8 pb-6 md:grid-cols-[1fr_1.6fr_1fr]">
-          <a href="#" aria-label="32Care Dental Clinic home" className="relative block h-[76px] w-[230px] max-w-full">
+          <a href="#" aria-label="32Care Dental Clinic home" className="relative block h-[76px] w-[230px] rounded-[8px] max-w-full bg-white">
             <Image src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960421/logo-32.png" alt="32Care Dental Clinic" fill sizes="230px" className="object-contain object-left" />
           </a>
 
