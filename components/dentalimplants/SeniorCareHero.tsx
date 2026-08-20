@@ -20,7 +20,7 @@ export function SeniorCareHero() {
   return (
     <section id="home" className="relative min-h-[865px] scroll-mt-[78px] overflow-hidden border-t border-[#d7e7f1] bg-[#f5fbff] font-['Onest',sans-serif] text-[#092b4c] max-[620px]:min-h-0 lg:h-[calc(100svh-78px)] lg:min-h-[690px] lg:max-h-[790px]">
       <Image
-        src="/Pics for website1/DSC_2588.JPG"
+        src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040406/DSC_2588.jpg"
         alt=""
         fill
         preload
@@ -108,19 +108,19 @@ export function SeniorCareHero() {
           </Reveal>
 
           <Reveal delay={150} direction="down" className="absolute -right-[12%] bottom-[4%] top-[19%] w-[43%] overflow-hidden rounded-tl-[48%] bg-white max-[620px]:hidden">
-            <Image src="/Pics for website1/DSC_2588.JPG" alt="Dental specialist presenting a natural-looking smile" fill sizes="(max-width: 1024px) 45vw, 390px" className="object-cover object-[50%_center]" />
+            <Image src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040406/DSC_2588.jpg" alt="Dental specialist presenting a natural-looking smile" fill sizes="(max-width: 1024px) 45vw, 390px" className="object-cover object-[50%_center]" />
           </Reveal>
 
           <Reveal delay={300} direction="right" className="absolute left-[50%] top-[25.5%] z-20 flex min-h-[100px] w-[292px] items-center gap-4 rounded-[13px] bg-white px-5 py-4 shadow-[0_8px_25px_rgba(7,53,118,.08)] max-[620px]:hidden lg:min-h-[88px] lg:w-[260px] lg:gap-3 lg:px-4 lg:py-3 xl:min-h-[100px] xl:w-[292px]">
             <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full border-2 border-[#c9e6f5] bg-[#e8f5fc] lg:h-14 lg:w-14 xl:h-16 xl:w-16">
-              <Image src="/Pics for website1/DSC_2588.JPG" alt="Advanced dental implant technology" fill sizes="64px" className="object-cover object-center" />
+              <Image src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040406/DSC_2588.jpg" alt="Advanced dental implant technology" fill sizes="64px" className="object-cover object-center" />
             </div>
             <div><strong className="block text-[23px] leading-tight max-[620px]:text-[17px] lg:text-[20px] xl:text-[23px]">Advanced</strong><span className="whitespace-nowrap text-[16px] text-[#858188] max-[620px]:text-[12px] lg:text-[14px] xl:text-[16px]">Dental Technology</span></div>
           </Reveal>
 
           <Reveal delay={450} direction="up" className="absolute bottom-[4%] left-[-2%] z-20 flex min-h-[108px] w-[315px] items-center gap-4 rounded-[13px] bg-white px-4 py-3 shadow-[0_8px_25px_rgba(7,53,118,.08)] max-[620px]:hidden lg:min-h-[90px] lg:w-[280px] lg:gap-3 lg:py-2 xl:min-h-[108px] xl:w-[315px]">
             <div className="relative h-[64px] w-[64px] shrink-0 overflow-hidden rounded-full bg-[#dfe7ea] max-[620px]:h-12 max-[620px]:w-12 lg:h-14 lg:w-14 xl:h-16 xl:w-16">
-              <Image src="/Pics for website1/1.jpg" alt="Dental implant specialist" fill sizes="64px" className="object-cover object-[58%_20%]" />
+              <Image src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040400/1.jpg" alt="Dental implant specialist" fill sizes="64px" className="object-cover object-[58%_20%]" />
             </div>
             <div><strong className="block whitespace-nowrap text-[22px] leading-tight max-[620px]:text-[18px] lg:text-[20px] xl:text-[22px]">Personalised</strong><span className="whitespace-nowrap text-[16px] text-[#858188] max-[620px]:text-[13px] lg:text-[14px] xl:text-[16px]">Treatment Plans</span></div>
           </Reveal>

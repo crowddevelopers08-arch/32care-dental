@@ -15,7 +15,7 @@ export function DentalNavbar() {
     <header className="sticky top-0 z-50 border-b border-[#dceaf3] bg-white/95 px-4 font-['Onest',sans-serif] shadow-[0_5px_24px_rgba(7,53,118,.06)] backdrop-blur-md sm:px-8 lg:px-12">
       <div className="mx-auto flex min-h-[78px] max-w-[1540px] items-center justify-between gap-6">
         <Link href="/dental-implant" aria-label="32Care Dental Clinic dental implant home" className="shrink-0">
-          <Image src="/logo-32.png" alt="32Care Dental Clinic and Implant Centre" width={658} height={279} preload className="h-auto w-[145px] object-contain sm:w-[175px]" />
+          <Image src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960421/logo-32.png" alt="32Care Dental Clinic and Implant Centre" width={658} height={279} preload className="h-auto w-[145px] object-contain sm:w-[175px]" />
         </Link>
 
         <div className="hidden items-center gap-7 lg:flex xl:gap-9">

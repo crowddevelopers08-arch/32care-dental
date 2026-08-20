@@ -9,32 +9,32 @@ const directions = ["left", "up", "right"] as const;
 
 const results = [
   {
-    src: "/1001219256.jpg.jpeg",
+    src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960420/1001219256.jpg.jpg",
     title: "Composite Filling Restoration",
     description: "Decayed molars restored with clean, natural-looking fillings.",
   },
   {
-    src: "/1001343692.jpg.jpeg",
+    src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960420/1001343692.jpg.jpg",
     title: "Gap Closure Smile Makeover",
     description: "A gapped smile closed for a seamless, confident look.",
   },
   {
-    src: "/1001352368.jpg.jpeg",
+    src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960420/1001352368.jpg.jpg",
     title: "Root Canal Treatment",
     description: "An infected tooth saved with precise root canal therapy.",
   },
   {
-    src: "/1001386360.jpg.jpeg",
+    src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960421/1001386360.jpg.jpg",
     title: "Full Mouth Smile design-Veneers",
     description: "A fractured front tooth restored to a natural, complete smile.",
   },
   {
-    src: "/1001402847.jpg.jpeg",
+    src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960422/1001402847.jpg.jpg",
     title: "Dental Implant Placement",
     description: "A missing tooth space restored with a secure implant.",
   },
   {
-    src: "/1001471483.jpg.jpeg",
+    src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960422/1001471483.jpg.jpg",
     title: "Full Mouth Implant Rehabilitation",
     description: "Multiple missing teeth replaced with a complete implant-supported smile.",
   },

@@ -59,7 +59,7 @@ export function DentalPromo() {
       <div className="relative mx-auto grid max-w-[1360px] items-center gap-14 max-[620px]:gap-6 lg:grid-cols-[730px_1fr] lg:gap-24">
         <div className="relative order-2 mx-auto h-[610px] w-full max-w-[560px] max-[620px]:order-3 max-[620px]:h-[430px]">
           <Reveal delay={0} direction="left" className="absolute top-0 left-0 h-[535px] w-[79%] overflow-hidden bg-[#e8f5fc] max-[620px]:h-[400px] max-[620px]:w-[84%]">
-            <Image src="/Pics for website1/DSC_2673.JPG" alt="Experienced dentist at 32Care Dental Clinic" fill sizes="(max-width: 620px) 84vw, 445px" className="object-cover object-top" />
+            <Image src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040409/DSC_2673.jpg" alt="Experienced dentist at 32Care Dental Clinic" fill sizes="(max-width: 620px) 84vw, 445px" className="object-cover object-top" />
           </Reveal>
 
           <Reveal delay={150} direction="down" className="absolute right-0 bottom-0 z-10 h-[348px] w-[63%] overflow-hidden border-[5px] border-white bg-[#e8f5fc] max-[620px]:h-[240px] max-[620px]:w-[69%]">
@@ -67,7 +67,7 @@ export function DentalPromo() {
           </Reveal>
 
           {/* <Reveal delay={300} direction="right" className="absolute top-[33px] -right-6 z-20 h-[290px] w-[220px] overflow-hidden rounded-[6px] bg-[#0067ac] text-white max-[620px]:top-[28px] max-[620px]:right-0 max-[620px]:h-[195px] max-[620px]:w-[150px]">
-            <Image src="/Pics for website1/DSC_2666.JPG" alt="Doctor discussing personalised dental care" fill sizes="(max-width: 620px) 69vw, 350px" className="object-cover object-right" />
+            <Image src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040409/DSC_2666.jpg" alt="Doctor discussing personalised dental care" fill sizes="(max-width: 620px) 69vw, 350px" className="object-cover object-right" />
           </Reveal> */}
         </div>
 

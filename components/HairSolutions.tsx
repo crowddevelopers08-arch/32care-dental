@@ -8,16 +8,16 @@ import { Underline } from "./Underline";
 const directions = ["up", "down", "left", "right"] as const;
 
 const solutions = [
-  { title: "Single Sitting Root Canal Treatment", description: "For suitable cases, advanced techniques allow root canal treatment to be completed efficiently with proper diagnosis and planning.", image: "/root-canal-solutions/01.jpg" },
-  { title: "Comfortable Root Canal Therapy", description: "Modern dental techniques and advanced equipment help provide a more comfortable treatment experience for patients.", image: "/root-canal-solutions/02.jpg" },
-  { title: "Microscopic Root Canal Treatment", description: "Using magnification technology, dentists can achieve better visibility and precision during complex root canal procedures.", image: "/root-canal-solutions/03.jpg" },
-  { title: "Re-Root Canal Treatment (Retreatment)", description: "A specialised procedure for teeth that require additional treatment after a previous root canal.", image: "/root-canal-solutions/04.jpg" },
-  { title: "Root Canal Treatment For Infected Teeth", description: "Helps treat infection inside the tooth and preserve the natural tooth structure whenever possible.", image: "/root-canal-solutions/05.jpg" },
-  { title: "Root Canal With Dental Crown", description: "A dental crown may be recommended after root canal treatment to restore tooth strength, protection, and function.", image: "/root-canal-solutions/06.jpg" },
-  { title: "Emergency Root Canal Treatment", description: "Provides timely dental care for sudden tooth pain, infection, or dental discomfort requiring immediate attention.", image: "/root-canal-solutions/07.jpg" },
-  { title: "Pediatric Root Canal Treatment", description: "Specialised root canal care designed for children's teeth with a focus on comfort and gentle treatment.", image: "/root-canal-solutions/08.jpg" },
-  { title: "Post & Core Restoration", description: "A restorative procedure used to strengthen and support teeth that require additional reinforcement after root canal treatment.", image: "/root-canal-solutions/09.jpg" },
-  { title: "Endodontic Consultation & Diagnosis", description: "Detailed examination and diagnosis to understand tooth condition and recommend the most suitable treatment approach.", image: "/root-canal-solutions/10.jpg" },
+  { title: "Single Sitting Root Canal Treatment", description: "For suitable cases, advanced techniques allow root canal treatment to be completed efficiently with proper diagnosis and planning.", image: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040481/01.jpg" },
+  { title: "Comfortable Root Canal Therapy", description: "Modern dental techniques and advanced equipment help provide a more comfortable treatment experience for patients.", image: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040482/02.jpg" },
+  { title: "Microscopic Root Canal Treatment", description: "Using magnification technology, dentists can achieve better visibility and precision during complex root canal procedures.", image: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040482/03.jpg" },
+  { title: "Re-Root Canal Treatment (Retreatment)", description: "A specialised procedure for teeth that require additional treatment after a previous root canal.", image: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040483/04.jpg" },
+  { title: "Root Canal Treatment For Infected Teeth", description: "Helps treat infection inside the tooth and preserve the natural tooth structure whenever possible.", image: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040484/05.jpg" },
+  { title: "Root Canal With Dental Crown", description: "A dental crown may be recommended after root canal treatment to restore tooth strength, protection, and function.", image: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040484/06.jpg" },
+  { title: "Emergency Root Canal Treatment", description: "Provides timely dental care for sudden tooth pain, infection, or dental discomfort requiring immediate attention.", image: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040485/07.jpg" },
+  { title: "Pediatric Root Canal Treatment", description: "Specialised root canal care designed for children's teeth with a focus on comfort and gentle treatment.", image: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040486/08.jpg" },
+  { title: "Post & Core Restoration", description: "A restorative procedure used to strengthen and support teeth that require additional reinforcement after root canal treatment.", image: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040486/09.jpg" },
+  { title: "Endodontic Consultation & Diagnosis", description: "Detailed examination and diagnosis to understand tooth condition and recommend the most suitable treatment approach.", image: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040487/10.jpg" },
 ];
 
 export function HairSolutions() {

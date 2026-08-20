@@ -9,10 +9,10 @@ const photos = [
   { src: "/Pics for website1/DSC_2591.JPG", alt: "Kosmo Dental Clinic reception area", cell: "col-span-3 row-span-6 col-start-1 row-start-1" },
   { src: "/Pics for website1/DSC01914.JPG", alt: "Modern dental treatment chair and equipment", cell: "col-span-2 row-span-3 col-start-4 row-start-1" },
   { src: "/Pics for website1/DSC_2638.JPG", alt: "Dentist examining a patient at Kosmo Dental Clinic", cell: "col-span-2 row-span-3 col-start-4 row-start-4" },
-  { src: "/Pics for website1/DSC_3910.JPG", alt: "Sterile dental instruments and equipment", cell: "col-span-3 row-span-6 col-start-6 row-start-1" },
+  { src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040406/DSC_3910.jpg", alt: "Sterile dental instruments and equipment", cell: "col-span-3 row-span-6 col-start-6 row-start-1" },
   { src: "/Pics for website1/DSC_2652.JPG", alt: "Patient consultation at Kosmo Dental Clinic", cell: "col-span-4 row-span-3 col-start-9 row-start-1" },
-  { src: "/Pics for website1/DSC_3795.JPG", alt: "Kosmo Dental Clinic interior", cell: "col-span-2 row-span-3 col-start-9 row-start-4" },
-  { src: "/Pics for website1/DSC_2643.JPG", alt: "Kosmo Dental Clinic waiting area", cell: "col-span-2 row-span-3 col-start-11 row-start-4" },
+  { src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040410/DSC_3795.jpg", alt: "Kosmo Dental Clinic interior", cell: "col-span-2 row-span-3 col-start-9 row-start-4" },
+  { src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040404/DSC_2643.jpg", alt: "Kosmo Dental Clinic waiting area", cell: "col-span-2 row-span-3 col-start-11 row-start-4" },
 ];
 
 export function Gallery() {

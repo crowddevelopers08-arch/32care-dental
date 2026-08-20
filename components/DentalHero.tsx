@@ -53,12 +53,12 @@ export function DentalHero() {
   };
 
   return <main className="relative min-h-screen overflow-hidden bg-[linear-gradient(118deg,#2d78bb_0%,#086cae_54%,#083a75_100%)] pb-[76px] font-sans text-white max-[620px]:pb-[108px] [@media(min-width:1400px)_and_(max-height:900px)]:min-h-[125vh] [@media(min-width:1400px)_and_(max-height:900px)]:[zoom:.8]">
-    <div className="absolute inset-y-0 right-0 left-[59%] bg-[url('/dental-treatment-hero.png')] bg-cover bg-[center_45%] max-[900px]:left-[42%] max-[900px]:h-[560px] max-[900px]:opacity-40 max-[620px]:left-0 max-[620px]:h-[470px] max-[620px]:bg-[center_top] max-[620px]:opacity-25 before:absolute before:inset-0 before:bg-[linear-gradient(90deg,#086cae_0%,rgba(8,108,174,.82)_18%,rgba(8,82,147,.15)_50%,transparent_72%)]" />
+    <div className="absolute inset-y-0 right-0 left-[59%] bg-[url('https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960421/dental-treatment-hero.png')] bg-cover bg-[center_45%] max-[900px]:left-[42%] max-[900px]:h-[560px] max-[900px]:opacity-40 max-[620px]:left-0 max-[620px]:h-[470px] max-[620px]:bg-[center_top] max-[620px]:opacity-25 before:absolute before:inset-0 before:bg-[linear-gradient(90deg,#086cae_0%,rgba(8,108,174,.82)_18%,rgba(8,82,147,.15)_50%,transparent_72%)]" />
     <div className="absolute z-[1] -top-[365px] -right-[235px] h-[820px] w-[820px] -rotate-[9deg] rounded-full border-[12px] border-[#54b6ec] opacity-90  max-[900px]:hidden" />
 
     <header className="relative z-[4] mx-auto flex h-[108px] max-w-[1660px] items-start justify-between px-7 py-5 max-[900px]:h-auto max-[900px]:items-center max-[620px]:px-[15px] max-[620px]:py-3">
       <a href="#" className="flex items-center text-white no-underline">
-        <Image src="/logo-32.png" alt="32 Care Dental Clinic and Implant Centre" width={658} height={279} priority className="h-auto w-[230px] rounded-lg bg-white object-contain p-1.5 max-[620px]:w-[138px] max-[620px]:rounded-md max-[620px]:p-1" />
+        <Image src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960421/logo-32.png" alt="32 Care Dental Clinic and Implant Centre" width={658} height={279} priority className="h-auto w-[230px] rounded-lg bg-white object-contain p-1.5 max-[620px]:w-[138px] max-[620px]:rounded-md max-[620px]:p-1" />
       </a>
       <nav className="flex h-[63px] items-center gap-6 whitespace-nowrap text-xl max-[620px]:gap-2">
         {/* <span className="h-px w-20 bg-white/80 max-[1200px]:hidden" /> */}

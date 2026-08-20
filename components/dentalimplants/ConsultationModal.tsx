@@ -146,7 +146,7 @@ export function ConsultationModal() {
         </div>
 
         <div className="relative hidden min-h-[260px] lg:block">
-          <Image src="/Pics for website1/DSC_2673.JPG" alt="Dental specialist at 32Care Dental Clinic" fill sizes="380px" className="object-cover" />
+          <Image src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040409/DSC_2673.jpg" alt="Dental specialist at 32Care Dental Clinic" fill sizes="380px" className="object-cover" />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,53,118,0)_40%,rgba(7,53,118,.65)_100%)]" />
           <div className="absolute inset-x-6 bottom-6 text-white">
             <p className="text-[18px] leading-snug font-bold">18+ Years of Trusted Dental Implant Expertise</p>

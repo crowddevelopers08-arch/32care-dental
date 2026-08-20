@@ -11,8 +11,8 @@ const navLinks = [
 ];
 
 const posts = [
-  { image: "/root-canal-solutions/03.jpg", title: "Understanding when root canal treatment may be needed", date: "Dental Care Guide" },
-  { image: "/root-canal-solutions/06.jpg", title: "Caring for your tooth after root canal treatment", date: "Patient Advice" },
+  { image: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040482/03.jpg", title: "Understanding when root canal treatment may be needed", date: "Dental Care Guide" },
+  { image: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040484/06.jpg", title: "Caring for your tooth after root canal treatment", date: "Patient Advice" },
 ];
 
 export function SiteFooter() {
@@ -21,7 +21,7 @@ export function SiteFooter() {
       <div className="mx-auto max-w-[1315px]">
         <div className="grid items-center max-sm:gap-4 gap-8 pb-6 md:grid-cols-[1fr_1.6fr_1fr]">
           <a href="#" aria-label="32Care Dental Clinic home" className="relative block h-[76px] w-[230px] max-w-full">
-            <Image src="/logos.png" alt="32Care Dental Clinic" fill sizes="230px" className="object-contain object-left" />
+            <Image src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960421/logo-32.png" alt="32Care Dental Clinic" fill sizes="230px" className="object-contain object-left" />
           </a>
 
           <form className="flex items-center gap-5 max-[620px]:block" action="#">

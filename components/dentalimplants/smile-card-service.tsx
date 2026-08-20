@@ -21,7 +21,7 @@ const services: Service[] = [
     title: "Single Tooth Implants",
     description:
       "Replace a missing tooth with a natural-looking and functional implant solution.",
-    image: "/root-canal-solutions/01.jpg",
+    image: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040481/01.jpg",
     icon: <ToothIcon />,
   },
   {
@@ -29,7 +29,7 @@ const services: Service[] = [
     title: "Multiple Teeth Implants / Bridges",
     description:
       "Restore multiple missing teeth with stable and aesthetic replacements.",
-    image: "/root-canal-solutions/02.jpg",
+    image: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040482/02.jpg",
     icon: <BridgeIcon />,
   },
   {
@@ -37,7 +37,7 @@ const services: Service[] = [
     title: "Full Mouth Rehabilitation (All-on-4 / All-on-6)",
     description:
       "Complete smile restoration with advanced full-mouth implant solutions.",
-    image: "/root-canal-solutions/03.jpg",
+    image: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040482/03.jpg",
     icon: <SmileIcon />,
   },
   {
@@ -45,7 +45,7 @@ const services: Service[] = [
     title: "Immediate Implants (Post-Extraction)",
     description:
       "Replace extracted teeth with a planned implant solution for faster smile restoration.",
-    image: "/root-canal-solutions/04.jpg",
+    image: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040483/04.jpg",
     icon: <ImplantIcon />,
   },
   {
@@ -53,7 +53,7 @@ const services: Service[] = [
     title: "Bone Grafting & Sinus Lift",
     description:
       "Enhance jawbone support to make implant treatment possible when required.",
-    image: "/root-canal-solutions/05.jpg",
+    image: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040484/05.jpg",
     icon: <BoneIcon />,
   },
 ];

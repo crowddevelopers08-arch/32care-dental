@@ -6,10 +6,10 @@ import { Underline } from "./Underline";
 const directions = ["left", "up", "down", "right"] as const;
 
 const steps = [
-  { number: "01", title: "Meet The Dentist", description: "Consult experienced dental specialists for personalised care and treatment guidance.", icon: "/procedure-icons/meet-dentist.svg", background: "/Pics for website1/DSC_2522.JPG" },
-  { number: "02", title: "Dental Evaluation", description: "Get accurate diagnosis and a customised treatment plan for your dental needs.", icon: "/procedure-icons/dental-evaluation.svg", background: "/Pics for website1/DSC_2539.JPG" },
-  { number: "03", title: "Advanced Treatment", description: "Experience precise root canal care with modern dental techniques.", icon: "/procedure-icons/advanced-treatment.svg", background: "/Pics for website1/DSC02101.JPG" },
-  { number: "04", title: "Restoration & Follow-Up", description: "Restore tooth function with expert aftercare and dental support.", icon: "/procedure-icons/restoration-follow-up.svg", background: "/Pics for website1/DSC_2537.JPG" },
+  { number: "01", title: "Meet The Dentist", description: "Consult experienced dental specialists for personalised care and treatment guidance.", icon: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040467/meet-dentist.svg", background: "/Pics for website1/DSC_2522.JPG" },
+  { number: "02", title: "Dental Evaluation", description: "Get accurate diagnosis and a customised treatment plan for your dental needs.", icon: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040466/dental-evaluation.svg", background: "/Pics for website1/DSC_2539.JPG" },
+  { number: "03", title: "Advanced Treatment", description: "Experience precise root canal care with modern dental techniques.", icon: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040466/advanced-treatment.svg", background: "/Pics for website1/DSC02101.JPG" },
+  { number: "04", title: "Restoration & Follow-Up", description: "Restore tooth function with expert aftercare and dental support.", icon: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040467/restoration-follow-up.svg", background: "/Pics for website1/DSC_2537.JPG" },
 ];
 
 
