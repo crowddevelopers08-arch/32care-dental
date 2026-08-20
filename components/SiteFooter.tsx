@@ -13,7 +13,7 @@ export function SiteFooter() {
     <footer className="relative bg-[#102532] px-5 pt-12 font-['Onest',sans-serif] text-white sm:px-8 lg:px-12">
       <div className="mx-auto max-w-[1315px]">
         <div className="grid items-center max-sm:gap-4 gap-8 pb-6 md:grid-cols-[1fr_1.6fr_1fr]">
-          <a href="#" aria-label="32Care Dental Clinic home" className="relative block h-[76px] w-[230px] max-w-full rounded-[8px] bg-white">
+          <a href="/root-canal" aria-label="32Care Dental Clinic home" className="relative block h-[76px] w-[230px] max-w-full rounded-[8px] bg-white">
             <Image src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960421/logo-32.png" alt="32Care Dental Clinic" fill sizes="230px" className="object-contain object-left" />
           </a>
 
@@ -76,7 +76,7 @@ export function SiteFooter() {
 
         <div className="flex min-h-[58px] items-center justify-between max-sm:gap-2 gap-5 border-t border-white/10 text-[12px] text-[#d5e0e7] max-[620px]:flex-col max-[620px]:justify-center max-[620px]:py-5 max-[620px]:text-center">
           <p>32Care Dental Clinic | Caring for healthier smiles</p>
-          <a href="/privacy-policy" className="transition hover:text-[#54b6ec]">Privacy Policy</a>
+          <a href="/root-canal/privacy-policy" className="transition hover:text-[#54b6ec]">Privacy Policy</a>
           <p>© {new Date().getFullYear()} 32Care Dental Clinic | <a href="/privacy-policy" className="transition hover:text-[#54b6ec]">Privacy Policy</a> | All Rights Reserved</p>
         </div>
       </div>

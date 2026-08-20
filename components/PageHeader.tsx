@@ -5,7 +5,7 @@ export function PageHeader() {
   return (
     <header className="border-b border-[#dceaf3] bg-white px-4 py-3 sm:px-7 sm:py-4">
       <div className="mx-auto flex max-w-[1360px] items-center justify-between gap-3">
-        <Link href="/" aria-label="32Care Dental Clinic home" className="shrink-0">
+        <Link href="/root-canal" aria-label="32Care Dental Clinic home" className="shrink-0">
           <Image
             src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960421/logo-32.png"
             alt="32Care Dental Clinic and Implant Centre"
@@ -26,7 +26,7 @@ export function PageHeader() {
             <span className="min-[390px]:hidden">Call</span>
           </a>
           <Link
-            href="/"
+            href="/root-canal"
             className="inline-flex h-10 items-center justify-center gap-1.5 rounded-full border-2 border-[#0067ac] px-3 text-[12px] font-bold text-[#0067ac] transition hover:bg-[#0067ac] hover:text-white sm:h-11 sm:px-5 sm:text-sm"
           >
             <span aria-hidden="true">←</span> Back to Home

@@ -45,7 +45,7 @@ export function DentalHero() {
       setFormStatus("success");
       form.reset();
       setPhone("");
-      router.push("/thank-you");
+      router.push("/root-canal/thank-you");
     } catch (err) {
       setFormStatus("error");
       setFormError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
@@ -57,7 +57,7 @@ export function DentalHero() {
     <div className="absolute z-[1] -top-[365px] -right-[235px] h-[820px] w-[820px] -rotate-[9deg] rounded-full border-[12px] border-[#54b6ec] opacity-90  max-[900px]:hidden" />
 
     <header className="relative z-[4] mx-auto flex h-[108px] max-w-[1660px] items-start justify-between px-7 py-5 max-[900px]:h-auto max-[900px]:items-center max-[620px]:px-[15px] max-[620px]:py-3">
-      <a href="#" className="flex items-center text-white no-underline">
+      <a href="/root-canal" className="flex items-center text-white no-underline">
         <Image src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960421/logo-32.png" alt="32 Care Dental Clinic and Implant Centre" width={658} height={279} priority className="h-auto w-[230px] rounded-lg bg-white object-contain p-1.5 max-[620px]:w-[138px] max-[620px]:rounded-md max-[620px]:p-1" />
       </a>
       <nav className="flex h-[63px] items-center gap-6 whitespace-nowrap text-xl max-[620px]:gap-2">
