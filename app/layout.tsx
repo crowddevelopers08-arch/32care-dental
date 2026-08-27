@@ -37,6 +37,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             `,
           }}
         />
+        {/* End Google Tag Manager */}
       </head>
       <body className="min-h-full flex flex-col">
         {/* Google Tag Manager (noscript) */}
@@ -48,6 +49,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
+        {/* End Google Tag Manager (noscript) */}
         {children}
       </body>
     </html>
