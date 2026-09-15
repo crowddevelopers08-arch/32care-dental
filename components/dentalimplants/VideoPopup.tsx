@@ -26,7 +26,7 @@ export function VideoPopup() {
         <svg viewBox="0 0 20 20" className="h-3 w-3 lg:h-3.5 lg:w-3.5" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round"><path d="m5 5 10 10M15 5 5 15" /></svg>
       </button>
       <video
-        src="/1001442866.mp4"
+        src="https://res.cloudinary.com/y8z11z0x/video/upload/v1789452467/1001442866.mp4"
         aria-label="Patient success story at 32Care Dental Clinic"
         className="aspect-[9/16] w-full object-cover"
         autoPlay
