@@ -13,13 +13,13 @@ export function AboutExperience() {
           <span aria-hidden="true" className="absolute top-4 left-2 h-[185px] w-[185px] rounded-full border-[5px] border-[#54b6ec]/45 before:absolute before:inset-5 before:rounded-full before:border-[5px] before:border-[#0067ac]/45 after:absolute after:inset-11 after:rounded-full after:border-[5px] after:border-[#54b6ec]/45" />
 
           <div className="absolute top-0 right-0 h-[405px] w-[76%] overflow-hidden rounded-[12px] bg-[#e8f5fc] max-[620px]:h-[330px] max-[620px]:w-[82%]">
-            <Image src="/Pics for website1/DSC_2586.JPG" alt="Dentist welcoming a patient at the dental clinic" fill sizes="(max-width: 620px) 82vw, 430px" className="object-cover" />
+            <Image src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789454220/DSC_2586.jpg" alt="Dentist welcoming a patient at the dental clinic" fill sizes="(max-width: 620px) 82vw, 430px" className="object-cover" />
           </div>
 
           <span aria-hidden="true" className="absolute top-[210px] left-0 z-20 grid h-[54px] w-[54px] place-items-center rounded-full bg-[#54b6ec]  max-[620px]:top-[170px]"><i className="h-[14px] w-[14px] rounded-full bg-white" /></span>
 
           <div className="absolute bottom-0 left-0 z-10 h-[385px] w-[75%] overflow-hidden rounded-[12px] bg-[#e8f5fc] max-[620px]:h-[320px] max-[620px]:w-[80%]">
-            <Image src="/Pics for website1/DSC_2566.JPG" alt="Modern dental treatment room and equipment" fill sizes="(max-width: 620px) 80vw, 420px" className="object-cover object-top" />
+            <Image src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789454222/DSC_2566.jpg" alt="Modern dental treatment room and equipment" fill sizes="(max-width: 620px) 80vw, 420px" className="object-cover object-top" />
           </div>
 
           <div className="absolute right-8 bottom-[78px] z-20 grid h-[176px] w-[176px] place-items-center rounded-[12px] bg-[#0067ac] text-center text-white max-[620px]:right-0 max-[620px]:bottom-10 max-[620px]:h-[145px] max-[620px]:w-[145px]">

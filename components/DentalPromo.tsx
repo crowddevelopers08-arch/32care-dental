@@ -59,7 +59,7 @@ export function DentalPromo() {
           </Reveal>
 
           <Reveal delay={150} direction="down" className="absolute right-0 bottom-0 z-10 h-[348px] w-[63%] overflow-hidden border-[5px] border-white bg-[#e8f5fc] max-[620px]:h-[240px] max-[620px]:w-[69%]">
-            <Image src="/Pics for website1/DSC_2612.JPG" alt="Doctor discussing personalised dental care" fill sizes="(max-width: 620px) 69vw, 350px" className="object-cover object-right" />
+            <Image src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789454253/DSC_2612.jpg" alt="Doctor discussing personalised dental care" fill sizes="(max-width: 620px) 69vw, 350px" className="object-cover object-right" />
           </Reveal>
 
           {/* <Reveal delay={300} direction="right" className="absolute top-[33px] -right-6 z-20 h-[290px] w-[220px] overflow-hidden rounded-[6px] bg-[#0067ac] text-white max-[620px]:top-[28px] max-[620px]:right-0 max-[620px]:h-[195px] max-[620px]:w-[150px]">
