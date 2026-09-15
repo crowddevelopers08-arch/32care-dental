@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description: "Get advanced, comfortable root canal treatment in Pune at 32Care Dental Clinic. Consult experienced dental specialists for personalised care.",
   icons: {
     icon: [
-      { url: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960421/logo-32.png", sizes: "any", type: "image/webp" },
-      { url: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960421/logo-32.png", sizes: "512x512", type: "image/webp" },
+      { url: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452419/logo-32.png", sizes: "any", type: "image/webp" },
+      { url: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452419/logo-32.png", sizes: "512x512", type: "image/webp" },
     ],
-    apple: [{ url: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960421/logo-32.png", sizes: "180x180", type: "image/webp" }],
+    apple: [{ url: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452419/logo-32.png", sizes: "180x180", type: "image/webp" }],
   },
 };
 

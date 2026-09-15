@@ -9,32 +9,32 @@ const directions = ["left", "up", "right"] as const;
 
 const results = [
   {
-    src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960420/1001219256.jpg.jpg",
+    src: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452402/1001219256.jpg.jpg",
     title: "Composite Filling Restoration",
     description: "Decayed molars restored with clean, natural-looking fillings.",
   },
   {
-    src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960420/1001343692.jpg.jpg",
+    src: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452402/1001343692.jpg.jpg",
     title: "Gap Closure Smile Makeover",
     description: "A gapped smile closed for a seamless, confident look.",
   },
   {
-    src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960420/1001352368.jpg.jpg",
+    src: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452403/1001352368.jpg.jpg",
     title: "Root Canal Treatment",
     description: "An infected tooth saved with precise root canal therapy.",
   },
   {
-    src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960421/1001386360.jpg.jpg",
+    src: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452403/1001386360.jpg.jpg",
     title: "Full Mouth Smile design-Veneers",
     description: "A fractured front tooth restored to a natural, complete smile.",
   },
   {
-    src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960422/1001402847.jpg.jpg",
+    src: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452403/1001402847.jpg.jpg",
     title: "Dental Implant Placement",
     description: "A missing tooth space restored with a secure implant.",
   },
   {
-    src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1786960422/1001471483.jpg.jpg",
+    src: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452408/1001471483.jpg.jpg",
     title: "Full Mouth Implant Rehabilitation",
     description: "Multiple missing teeth replaced with a complete implant-supported smile.",
   },

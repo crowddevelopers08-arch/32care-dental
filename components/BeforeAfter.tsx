@@ -9,21 +9,21 @@ const directions = ["left", "up", "right"] as const;
 
 const results = [
   {
-    src: "https://res.cloudinary.com/jfmvvhot/image/upload/v1785917604/bfaf-img3_ucjwg4.jpg",
+    src: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452420/result-2.jpg",
     width: 781,
     height: 819,
     title: "Smile Transformation",
     description: "A brighter, more balanced and confident smile.",
   },
   {
-    src: "https://res.cloudinary.com/jfmvvhot/image/upload/v1785917604/bfaf-img2_pxt0sx.jpg",
+    src: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452420/result-3.jpg",
     width: 1280,
     height: 1280,
     title: "Advanced Dental Restoration",
     description: "Visible improvement with carefully planned dental care.",
   },
   {
-    src: "https://res.cloudinary.com/jfmvvhot/image/upload/v1785918623/bfaf-imgs1_roxjpz.jpg",
+    src: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452420/result-1.jpg",
     width: 720,
     height: 1280,
     title: "Complete Smile Rehabilitation",
