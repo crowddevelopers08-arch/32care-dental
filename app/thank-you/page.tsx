@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function ThankYouPage() {
   return (
     <main className="flex min-h-screen flex-col bg-[#f3f9fd] font-['Onest',sans-serif] text-[#092b4c]">
-      {/* Google Ads Conversion Tracking */}
+      {/* Google Ads Conversion Trking */}
       <Script id="google-ads-conversion">
         {`
           gtag('event', 'conversion', {'send_to': 'AW-18061336152/xnK2CJS37eQcENi8qKRD'});
