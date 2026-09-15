@@ -11,6 +11,13 @@ export const metadata: Metadata = {
 export default function ThankYouPage() {
   return (
     <main className="flex min-h-screen flex-col bg-[#f3f9fd] font-['Onest',sans-serif] text-[#092b4c]">
+      {/* Google Ads Conversion Tracking */}
+      <Script id="google-ads-conversion">
+        {`
+          gtag('event', 'conversion', {'send_to': 'AW-18061336152/xnK2CJS37eQcENi8qKRD'});
+        `}
+      </Script>
+
       <header className="border-b border-[#dceaf3] bg-white px-4 py-3 sm:px-7 sm:py-4">
         <div className="mx-auto flex max-w-[1360px] items-center justify-between gap-3">
           <Image
