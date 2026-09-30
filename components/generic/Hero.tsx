@@ -6,7 +6,7 @@ import { ArrowIcon, PhoneIcon } from "./Icons";
 export default function Hero() {
   return (
     <section className="relative isolate overflow-hidden bg-[#052b50] pb-8 pt-20 sm:pt-28 lg:pb-20 lg:pt-32">
-      {/* Background photo + brand gradients */}
+      {/* Background photo + brand */}
       <Image
         src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789452410/dental-treatment-hero.png"
         quality={90}
