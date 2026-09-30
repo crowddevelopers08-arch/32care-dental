@@ -34,7 +34,10 @@ export default function PatientStories() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-5 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeading title="Real Experiences From Our Patients" align="left" />
-          <CarouselArrows onStep={step} label="patient stories" />
+          {/* Top arrows: hidden on mobile, unchanged on sm and up */}
+          <div className="hidden sm:contents">
+            <CarouselArrows onStep={step} label="patient stories" />
+          </div>
         </div>
 
         <div {...touchHandlers} className="mt-6 sm:mt-10">
@@ -65,7 +68,32 @@ export default function PatientStories() {
             ))}
           </div>
 
-          <CarouselDots count={videos.length} current={current} onGoTo={goTo} onStep={step} labels={videos.map((v) => v.title)} />
+          {/* Mobile: arrows on both sides of the dots. sm and up: wrapper disappears (contents) */}
+          <div className="flex max-sm:mt-5 justify-center gap-4 sm:contents">
+            <button
+              type="button"
+              onClick={() => step(-1)}
+              aria-label="Previous patient story"
+              className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white text-[#052b50] shadow-md ring-1 ring-[#052b50]/10 transition active:scale-95 active:bg-[#c9e6f5] sm:hidden"
+            >
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+
+            <CarouselDots count={videos.length} current={current} onGoTo={goTo} onStep={step} labels={videos.map((v) => v.title)} />
+
+            <button
+              type="button"
+              onClick={() => step(1)}
+              aria-label="Next patient story"
+              className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white text-[#052b50] shadow-md ring-1 ring-[#052b50]/10 transition active:scale-95 active:bg-[#c9e6f5] sm:hidden"
+            >
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </button>
+          </div>
         </div>
 
         <div className="mt-8 flex justify-center sm:mt-10">

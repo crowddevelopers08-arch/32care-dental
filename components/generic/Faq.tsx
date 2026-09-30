@@ -133,9 +133,9 @@ export default function Faq() {
                     {site.address}
                   </p>
                 </div>
-                <div className="flex gap-4">
+                <div className="flex items-center gap-4">
                   <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/10 text-[#8fe0ff]"><PhoneIcon className="h-5 w-5" /></span>
-                  <div className="flex flex-col text-[15px] font-semibold">
+                  <div className="flex flex-col text-[15px] font-semibold ">
                     {site.phones.map((p) => (
                       <a key={p.href} href={p.href} className="hover:text-[#8fe0ff]">{p.label}</a>
                     ))}

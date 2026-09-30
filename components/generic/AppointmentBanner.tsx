@@ -38,7 +38,7 @@ export default function AppointmentBanner() {
 
         <div className="relative flex flex-col gap-6 p-6 sm:flex-row sm:items-center sm:gap-8 sm:p-8 lg:p-10">
           <div className="flex items-start gap-4 sm:flex-1">
-            <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-white/10 text-white">
+            <span className="max-sm:hidden grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-white/10 text-white">
               <CalendarPlusIcon className="h-6 w-6" />
             </span>
             <div className="min-w-0 flex-1">
