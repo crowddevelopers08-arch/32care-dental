@@ -37,6 +37,23 @@ body {
   100% { transform: translateX(-50%); }
 }
 
+@keyframes care-travel-x {
+  0% { left: 10%; opacity: 0; }
+  10%, 90% { opacity: 1; }
+  100% { left: 90%; opacity: 0; }
+}
+
+@keyframes care-travel-y {
+  0% { top: 2rem; opacity: 0; }
+  10%, 90% { opacity: 1; }
+  100% { top: calc(100% - 2rem); opacity: 0; }
+}
+
+@keyframes care-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
 .animate-badge-marquee {
   animation: badge-marquee 14s linear infinite;
 }

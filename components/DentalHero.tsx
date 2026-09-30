@@ -45,7 +45,7 @@ export function DentalHero() {
       setFormStatus("success");
       form.reset();
       setPhone("");
-      router.push("/root-canal/thank-you");
+      router.push(window.location.pathname === "/" ? "/thank-you" : "/root-canal/thank-you");
     } catch (err) {
       setFormStatus("error");
       setFormError(err instanceof Error ? err.message : "Something went wrong. Please try again.");

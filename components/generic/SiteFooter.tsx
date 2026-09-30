@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Reveal } from "./Reveal";
+import { Reveal } from "../Reveal";
 
 const quickLinks = ["About Us", "Root Canal Treatments", "Before & After", "Patient Stories", "FAQ's"];
 
@@ -13,7 +13,7 @@ export function SiteFooter() {
     <footer className="relative bg-[#102532] px-5 pt-12 font-['Onest',sans-serif] text-white sm:px-8 lg:px-12">
       <div className="mx-auto max-w-[1315px]">
         <div className="grid items-center max-sm:gap-4 gap-8 pb-6 md:grid-cols-[1fr_1.6fr_1fr]">
-          <a href="/root-canal" aria-label="32Care Dental Clinic home" className="relative block h-[76px] w-[230px] max-w-full rounded-[8px] bg-white">
+          <a href="/generic" aria-label="32Care Dental Clinic home" className="relative block h-[76px] w-[230px] max-w-full rounded-[8px] bg-white">
             <Image src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789452419/logo-32.png" alt="32Care Dental Clinic" fill sizes="230px" className="object-contain object-left" />
           </a>
 
@@ -32,8 +32,8 @@ export function SiteFooter() {
 
         <div className="h-px bg-white/10" />
 
-        <div className="grid gap-12 max-sm:gap-6 py-6 md:grid-cols-2 lg:grid-cols-[1.15fr_.8fr_1fr_1fr] lg:gap-16">
-          <Reveal delay={0}>
+        <div className="flex flex-wrap justify-center gap-12 max-sm:gap-6 py-6 lg:gap-16">
+          {/* <Reveal delay={0}>
             <h2 className="text-[19px] font-extrabold">Find Us</h2>
             <div className="mt-8 max-sm:mt-3 overflow-hidden rounded-[8px] border border-white/10 ">
               <iframe
@@ -52,9 +52,9 @@ export function SiteFooter() {
             <nav className="mt-8 max-sm:mt-3 grid max-sm:gap-2 gap-4 text-[13px] text-[#d5e0e7]">
               {quickLinks.map((link) => <a key={link} href={link === "FAQ's" ? "#faqs" : "#"} className="flex items-center gap-3 transition hover:translate-x-1 hover:text-[#54b6ec]"><span className="h-px w-3 bg-[#8fa2ae]" />{link}</a>)}
             </nav>
-          </Reveal>
+          </Reveal> */}
 
-          <Reveal delay={200}>
+          <Reveal delay={200} className="w-full sm:w-auto sm:max-w-xs">
             <h2 className="text-[19px] font-extrabold">Dental Updates</h2>
             <div className="mt-8 max-sm:mt-3 grid gap-5">
               {posts.map((post) => <article key={post.title} className="grid grid-cols-[80px_1fr] gap-4">
@@ -64,7 +64,7 @@ export function SiteFooter() {
             </div>
           </Reveal>
 
-          <Reveal delay={300}>
+          <Reveal delay={300} className="w-full sm:w-auto sm:max-w-sm">
             <h2 className="text-[19px] font-extrabold">Contact Us</h2>
             <div className="mt-8 max-sm:mt-3 grid max-sm:gap-1 gap-5 text-[13px] leading-6 text-[#d5e0e7]">
               <ContactRow icon="pin">Zen Square, Office No. 311, 3rd Floor, Sr.No.69/4, Plot B, Panchshil Towers Rd, opp. EON Free Zone Phase 2, Kharadi, Pune, Maharashtra 411014</ContactRow>
@@ -76,8 +76,8 @@ export function SiteFooter() {
 
         <div className="flex min-h-[58px] items-center justify-between max-sm:gap-2 gap-5 border-t border-white/10 text-[12px] text-[#d5e0e7] max-[620px]:flex-col max-[620px]:justify-center max-[620px]:py-5 max-[620px]:text-center">
           <p>32Care Dental Clinic | Caring for healthier smiles</p>
-          <a href="/root-canal/privacy-policy" className="transition hover:text-[#54b6ec]">Privacy Policy</a>
-          <p>© {new Date().getFullYear()} 32Care Dental Clinic | <a href="/root-canal/privacy-policy" className="transition hover:text-[#54b6ec]">Privacy Policy</a> | All Rights Reserved</p>
+          <a href="/generic/privacy-policy" className="transition hover:text-[#54b6ec]">Privacy Policy</a>
+          <p>© {new Date().getFullYear()} 32Care Dental Clinic | All Rights Reserved</p>
         </div>
       </div>
 
