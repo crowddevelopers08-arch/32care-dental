@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export function PageHeader() {
+export function PageHeader({ homeHref = "/root-canal" }: { homeHref?: string }) {
   return (
     <header className="border-b border-[#dceaf3] bg-white px-4 py-3 sm:px-7 sm:py-4">
       <div className="mx-auto flex max-w-[1360px] items-center justify-between gap-3">
-        <Link href="/root-canal" aria-label="32Care Dental Clinic home" className="shrink-0">
+        <Link href={homeHref} aria-label="32Care Dental Clinic home" className="shrink-0">
           <Image
             src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789452419/logo-32.png"
             alt="32Care Dental Clinic and Implant Centre"
@@ -26,7 +26,7 @@ export function PageHeader() {
             <span className="min-[390px]:hidden">Call</span>
           </a>
           <Link
-            href="/root-canal"
+            href={homeHref}
             className="inline-flex h-10 items-center justify-center gap-1.5 rounded-full border-2 border-[#0067ac] px-3 text-[12px] font-bold text-[#0067ac] transition hover:bg-[#0067ac] hover:text-white sm:h-11 sm:px-5 sm:text-sm"
           >
             <span aria-hidden="true">←</span> Back to Home

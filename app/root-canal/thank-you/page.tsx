@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 
 export default function RootCanalThankYouPage() {
   // Event snippet for LP RCT - Leads conversion page
-  return <ThankYouContent conversionSendTo="AW-18061336152/XZvICNHV7OQcENi8qKRD" />;
+  return <ThankYouContent homeHref="/root-canal" conversionSendTo="AW-18061336152/XZvICNHV7OQcENi8qKRD" />;
 }

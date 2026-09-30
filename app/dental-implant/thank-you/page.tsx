@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function DentalImplantThankYouPage() {
-  return <ThankYouContent conversionSendTo="AW-18061336152/xnK2CJS37eQcENi8qKRD" />;
+  return <ThankYouContent homeHref="/dental-implant" conversionSendTo="AW-18061336152/xnK2CJS37eQcENi8qKRD" />;
 }
