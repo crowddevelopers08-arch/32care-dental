@@ -24,6 +24,8 @@ type SubmissionBody = {
   email: string;
   concern: string;
   pageUrl: string;
+  rating: string;
+  callback: string;
 };
 
 type TelecrmResponse = Record<string, unknown> & {
@@ -45,7 +47,13 @@ function normalizeSubmission(body: Record<string, unknown>): SubmissionBody {
     email: toText(body.email),
     concern: toText(body.concern),
     pageUrl: toText(body.pageUrl),
+    rating: toText(body.rating),
+    callback: toText(body.callback),
   };
+}
+
+function isReviewForm(source: string) {
+  return source.trim().toLowerCase() === 'review page';
 }
 
 function csvEscape(value: string): string {
@@ -77,6 +85,7 @@ function getSheetWebhookUrl() {
 function getSheetName(source: string) {
   const normalizedSource = source.trim().toLowerCase();
 
+  if (isReviewForm(source)) return 'Review Leads';
   if (normalizedSource === 'generic consult') return 'genericleads';
   if (normalizedSource === 'dental implant consultation') return 'Dental-Implant-Leads';
   return 'Root-Canal-Leads';
@@ -84,6 +93,23 @@ function getSheetName(source: string) {
 
 function getSheetData(body: SubmissionBody, timestamp: string, telecrmStatus: string) {
   const isDentalImplantForm = body.source.trim().toLowerCase() === 'dental implant consultation';
+
+  if (isReviewForm(body.source)) {
+    return {
+      headers: ['Timestamp', 'Source', 'Name', 'Phone', 'Rating', 'Callback', 'Message', 'URL', 'TeleCRM'],
+      row: [
+        timestamp,
+        body.source,
+        body.name,
+        body.phone,
+        body.rating,
+        body.callback,
+        body.concern,
+        body.pageUrl,
+        telecrmStatus,
+      ],
+    };
+  }
 
   if (isDentalImplantForm) {
     return {
@@ -211,6 +237,8 @@ async function pushToTeleCRM(body: SubmissionBody): Promise<TelecrmResponse | nu
     `Email: ${body.email || 'Not specified'}`,
     `Concern: ${body.concern || 'Not specified'}`,
     `URL: ${body.pageUrl || 'Not specified'}`,
+    ...(body.rating ? [`Rating: ${body.rating}/5`] : []),
+    ...(body.callback ? [`Callback: ${body.callback}`] : []),
   ].join(' | ');
 
   const payload = {
@@ -223,6 +251,8 @@ async function pushToTeleCRM(body: SubmissionBody): Promise<TelecrmResponse | nu
       { type: 'SYSTEM_NOTE', text: `Email: ${body.email || 'Not specified'}` },
       { type: 'SYSTEM_NOTE', text: `Condition: ${body.concern || 'Not specified'}` },
       { type: 'SYSTEM_NOTE', text: `URL: ${body.pageUrl || 'Not specified'}` },
+      ...(body.rating ? [{ type: 'SYSTEM_NOTE', text: `Rating: ${body.rating}/5` }] : []),
+      ...(body.callback ? [{ type: 'SYSTEM_NOTE', text: `Callback: ${body.callback}` }] : []),
     ],
   };
 
@@ -276,7 +306,7 @@ async function pushToTeleCRM(body: SubmissionBody): Promise<TelecrmResponse | nu
       synced: confirmed,
       statusCode: res.status,
       leadId: data.leadId || data.id || data.LeadID || null,
-      note: confirmed ? 'TeleCRM did not confirm lead creation' : 'TeleCRM lead confirmed',
+      note: confirmed ? 'TeleCRM lead confirmed' : 'TeleCRM did not confirm lead creation',
     };
   } catch (err) {
     clearTimeout(timeout);
