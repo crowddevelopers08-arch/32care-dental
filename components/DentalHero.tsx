@@ -33,24 +33,21 @@ export function DentalHero() {
     setFormStatus("submitting");
     setFormError("");
 
-    try {
-      const res = await fetch("/api/submissions", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ source: "Root-Canal-Form", name, phone, email, concern, pageUrl: window.location.href }),
-      });
-      const data = await res.json();
-      if (!res.ok || !data.success) throw new Error(data.error || "Something went wrong. Please try again.");
+    // keepalive lets the request finish in the background while we redirect immediately
+    fetch("/api/submissions", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ source: "Root-Canal-Form", name, phone, email, concern, pageUrl: window.location.href }),
+      keepalive: true,
+    }).catch((err) => console.error("Submission failed:", err));
 
-      setFormStatus("success");
-      form.reset();
-      setPhone("");
-      router.push("/root-canal/thank-you");
-    } catch (err) {
-      setFormStatus("error");
-      setFormError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
-    }
+    setFormStatus("success");
+    form.reset();
+    setPhone("");
+    router.push("/root-canal/thank-you");
   };
+
+  useEffect(() => { router.prefetch("/root-canal/thank-you"); }, [router]);
 
   return <main className="relative min-h-screen overflow-hidden bg-[linear-gradient(118deg,#2d78bb_0%,#086cae_54%,#083a75_100%)] pb-[76px] font-sans text-white max-[620px]:pb-[108px] [@media(min-width:1400px)_and_(max-height:900px)]:min-h-[125vh] [@media(min-width:1400px)_and_(max-height:900px)]:[zoom:.8]">
     <div className="absolute inset-y-0 right-0 left-[59%] bg-[url('https://res.cloudinary.com/y8z11z0x/image/upload/v1789452410/dental-treatment-hero.png')] bg-cover bg-[center_45%] max-[900px]:left-[42%] max-[900px]:h-[560px] max-[900px]:opacity-40 max-[620px]:left-0 max-[620px]:h-[470px] max-[620px]:bg-[center_top] max-[620px]:opacity-25 before:absolute before:inset-0 before:bg-[linear-gradient(90deg,#086cae_0%,rgba(8,108,174,.82)_18%,rgba(8,82,147,.15)_50%,transparent_72%)]" />

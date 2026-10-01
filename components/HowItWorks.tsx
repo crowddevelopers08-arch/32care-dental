@@ -7,9 +7,9 @@ const directions = ["left", "up", "down", "right"] as const;
 
 const steps = [
   { number: "01", title: "Meet The Dentist", description: "Consult experienced dental specialists for personalised care and treatment guidance.", icon: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452420/meet-dentist.svg", background: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789461613/DSC_2522.jpg" },
-  { number: "02", title: "Dental Evaluation", description: "Get accurate diagnosis and a customised treatment plan for your dental needs.", icon: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040466/dental-evaluation.svg", background: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789461611/DSC_2526.jpg" },
-  { number: "03", title: "Advanced Treatment", description: "Experience precise root canal care with modern dental techniques.", icon: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040466/advanced-treatment.svg", background: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789460976/DSC_0063.jpg" },
-  { number: "04", title: "Restoration & Follow-Up", description: "Restore tooth function with expert aftercare and dental support.", icon: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787040467/restoration-follow-up.svg", background: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789461609/DSC_2538.jpg" },
+  { number: "02", title: "Dental Evaluation", description: "Get accurate diagnosis and a customised treatment plan for your dental needs.", icon: "/root-icon-1.png", background: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789461611/DSC_2526.jpg" },
+  { number: "03", title: "Advanced Treatment", description: "Experience precise root canal care with modern dental techniques.", icon: "/root-icon-2.png", background: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789460976/DSC_0063.jpg" },
+  { number: "04", title: "Restoration & Follow-Up", description: "Restore tooth function with expert aftercare and dental support.", icon: "/root-icon-3.png", background: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789461609/DSC_2538.jpg" },
 ];
 
 
@@ -30,7 +30,9 @@ export function HowItWorks() {
             <Image src={step.background} alt="" fill sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 25vw" aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 rounded-[11px] object-cover opacity-0 transition-all duration-700 ease-out group-hover:scale-105 group-hover:opacity-100" />
             <span aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 rounded-[11px] bg-gradient-to-b from-[#052b50]/55 via-[#052b50]/65 to-[#031c36]/90 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
             <span className="relative z-[1] mx-auto grid h-16 w-16 place-items-center rounded-full bg-[#e8f5fc] ring-1 ring-[#c9e6f5] transition-all duration-500 group-hover:scale-110 group-hover:bg-[#0067ac] group-hover:ring-[#54b6ec] group-hover:shadow-[0_8px_20px_rgba(8,118,181,.28)]">
-              <Image src={step.icon} alt="" width={48} height={48} className="h-11 w-11 object-contain transition-all duration-[1200ms] ease-in-out group-hover:rotate-[1080deg] group-hover:brightness-0 group-hover:invert" />
+              {step.icon.endsWith(".png")
+                ? <span aria-hidden="true" className="h-11 w-11 bg-[#0876b5] transition-all duration-[1200ms] ease-in-out group-hover:rotate-[1080deg] group-hover:bg-white" style={{maskImage:`url(${step.icon})`,WebkitMaskImage:`url(${step.icon})`,maskSize:"contain",WebkitMaskSize:"contain",maskRepeat:"no-repeat",WebkitMaskRepeat:"no-repeat",maskPosition:"center",WebkitMaskPosition:"center"}} />
+                : <Image src={step.icon} alt="" width={48} height={48} className="h-11 w-11 object-contain transition-all duration-[1200ms] ease-in-out group-hover:rotate-[1080deg] group-hover:brightness-0 group-hover:invert" />}
             </span>
             <h3 className="relative z-[1] mx-auto mt-3 max-w-[210px] text-[17px] leading-tight font-bold transition-colors duration-500 group-hover:text-white">{step.title}</h3>
             <p className="relative z-[1] mx-auto mt-2 max-w-[210px] text-[13px] leading-[1.55] text-[#2b201b] transition-colors duration-500 group-hover:text-white">{step.description}</p>
