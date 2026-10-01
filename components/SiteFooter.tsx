@@ -4,8 +4,8 @@ import { Reveal } from "./Reveal";
 const quickLinks = ["About Us", "Root Canal Treatments", "Before & After", "Patient Stories", "FAQ's"];
 
 const posts = [
-  { image: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452399/03.jpg", title: "Understanding when root canal treatment may be needed", date: "Dental Care Guide" },
-  { image: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452400/06.jpg", title: "Caring for your tooth after root canal treatment", date: "Patient Advice" },
+  { image: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847394/03.jpg", title: "Understanding when root canal treatment may be needed", date: "Dental Care Guide" },
+  { image: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847394/06.jpg", title: "Caring for your tooth after root canal treatment", date: "Patient Advice" },
 ];
 
 export function SiteFooter() {
@@ -14,7 +14,7 @@ export function SiteFooter() {
       <div className="mx-auto max-w-[1315px]">
         <div className="grid items-center max-sm:gap-4 gap-8 pb-6 md:grid-cols-[1fr_1.6fr_1fr]">
           <a href="/root-canal" aria-label="32Care Dental Clinic home" className="relative block h-[76px] w-[230px] max-w-full rounded-[8px] bg-white">
-            <Image src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789452419/logo-32.png" alt="32Care Dental Clinic" fill sizes="230px" className="object-contain object-left" />
+            <Image src="https://res.cloudinary.com/xv3grzfw/image/upload/v1790847418/logo-32.png" alt="32Care Dental Clinic" fill sizes="230px" className="object-contain object-left" />
           </a>
 
           <form className="flex items-center gap-5 max-[620px]:block" action="#">

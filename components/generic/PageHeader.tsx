@@ -7,7 +7,7 @@ export function PageHeader() {
       <div className="mx-auto flex max-w-[1360px] items-center justify-between gap-3">
         <Link href="/generic" aria-label="32Care Dental Clinic home" className="shrink-0">
           <Image
-            src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789452419/logo-32.png"
+            src="https://res.cloudinary.com/xv3grzfw/image/upload/v1790847418/logo-32.png"
             alt="32Care Dental Clinic and Implant Centre"
             width={658}
             height={279}

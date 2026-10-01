@@ -9,7 +9,7 @@ export default function AppointmentBanner() {
         {/* background photo fading into the solid banner color */}
         <div aria-hidden className="absolute inset-0">
           <Image
-            src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789452414/DSC_2643.jpg"
+            src="https://res.cloudinary.com/xv3grzfw/image/upload/v1790847425/DSC_2643.jpg"
             alt=""
             fill
             sizes="100vw"
@@ -29,7 +29,7 @@ export default function AppointmentBanner() {
         {/* decorative tooth */}
         <div aria-hidden className="pointer-events-none absolute right-20 bottom-0 top-0 hidden w-36 opacity-90 sm:block lg:w-52">
           <Image
-            src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789452422/tooth-mascot.png"
+            src="https://res.cloudinary.com/xv3grzfw/image/upload/v1790847421/tooth-mascot.png"
             alt=""
             fill
             className="object-contain object-bottom"

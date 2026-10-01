@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="relative isolate overflow-hidden bg-[#052b50] pb-8 pt-20 sm:pt-28 lg:pb-20 lg:pt-32">
       {/* Background photo + brand gradients */}
       <Image
-        src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789452410/dental-treatment-hero.png"
+        src="https://res.cloudinary.com/xv3grzfw/image/upload/v1790847403/dental-treatment-hero.png"
         quality={90}
         alt=""
         fill
@@ -70,8 +70,8 @@ export default function Hero() {
           <div className="mt-10 hidden items-center gap-4 lg:flex">
             <div className="flex -space-x-3">
               {[
-                "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452417/DSC_2673.jpg",
-                "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452417/DSC_2666.jpg",
+                "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847419/DSC_2673.jpg",
+                "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847426/DSC_2666.jpg",
               ].map((src) => (
                 <Image quality={90} key={src} src={src} alt="" width={96} height={96} className="h-12 w-12 rounded-full object-cover ring-2 ring-[#052b50]" />
               ))}
@@ -90,7 +90,7 @@ export default function Hero() {
           <div className="rounded-[1.75rem] bg-white p-6 shadow-2xl shadow-black/40 ring-1 ring-white/20 sm:p-8">
             <div className="mb-6 flex items-start gap-4">
               <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-linear-to-br from-[#0067ac] to-[#0876b5] text-white shadow-lg shadow-[#0067ac]/30">
-                <Image quality={90} src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789452422/tooth-mascot.png" alt="" width={40} height={40} className="h-8 w-8 rounded-md bg-white p-0.5" />
+                <Image quality={90} src="https://res.cloudinary.com/xv3grzfw/image/upload/v1790847421/tooth-mascot.png" alt="" width={40} height={40} className="h-8 w-8 rounded-md bg-white p-0.5" />
               </span>
               <div>
                 <h2 className="text-xl font-bold leading-tight text-[#092b4c] sm:text-2xl">

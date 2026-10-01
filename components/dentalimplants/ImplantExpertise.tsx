@@ -9,10 +9,10 @@ export function ImplantExpertise() {
     <section id="doctor" className="scroll-mt-[78px] overflow-hidden px-5 py-14 font-['Onest',sans-serif] sm:px-10 lg:px-10 lg:py-10">
       <div className="mx-auto grid max-w-[1540px] items-center gap-10 max-lg:gap-0 lg:grid-cols-[.94fr_1.06fr] lg:gap-14">
         <div className="relative mx-auto grid w-full max-w-[570px] grid-cols-2 grid-rows-2 gap-x-5 gap-y-5 max-lg:order-4 max-lg:mt-8 max-[620px]:gap-x-3 max-[620px]:gap-y-4">
-          <ImageTile src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789454222/DSC_2566.jpg" alt="A confident patient showing her healthy smile" shape="rounded-full" delay={0} direction={tileDirections[0]} />
-          <ImageTile src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789454220/DSC_2586.jpg" alt="Dentist providing advanced dental care" shape="rounded-br-full rounded-bl-full" delay={100} direction={tileDirections[1]} />
-          <ImageTile src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789454254/DSC_2591.jpg" alt="Modern precision dental treatment" shape="rounded-br-[60%]" delay={200} direction={tileDirections[2]} />
-          <ImageTile src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789454253/DSC_2612.jpg" alt="Comfort-focused family dental consultation" shape="rounded-full" delay={300} direction={tileDirections[3]} />
+          <ImageTile src="https://res.cloudinary.com/xv3grzfw/image/upload/v1790847802/DSC_2566.jpg" alt="A confident patient showing her healthy smile" shape="rounded-full" delay={0} direction={tileDirections[0]} />
+          <ImageTile src="https://res.cloudinary.com/xv3grzfw/image/upload/v1790847802/DSC_2586.jpg" alt="Dentist providing advanced dental care" shape="rounded-br-full rounded-bl-full" delay={100} direction={tileDirections[1]} />
+          <ImageTile src="https://res.cloudinary.com/xv3grzfw/image/upload/v1790847811/DSC_2591.jpg" alt="Modern precision dental treatment" shape="rounded-br-[60%]" delay={200} direction={tileDirections[2]} />
+          <ImageTile src="https://res.cloudinary.com/xv3grzfw/image/upload/v1790847808/DSC_2612.jpg" alt="Comfort-focused family dental consultation" shape="rounded-full" delay={300} direction={tileDirections[3]} />
 
           <div className="absolute top-1/2 left-1/2 z-10 grid h-[118px] w-[118px] -translate-x-1/2 -translate-y-1/2 place-items-center max-[620px]:h-[100px] max-[620px]:w-[100px]">
             <div className="animate-spin-slow absolute inset-0 bg-[#c6e5fb] [clip-path:polygon(50%_0%,60%_13%,74%_5%,79%_21%,95%_20%,89%_36%,100%_50%,87%_59%,95%_74%,79%_79%,74%_95%,59%_87%,50%_100%,40%_87%,26%_95%,21%_79%,5%_74%,13%_59%,0%_50%,13%_40%,5%_26%,21%_21%,26%_5%,41%_13%)]" />

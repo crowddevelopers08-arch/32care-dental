@@ -30,7 +30,7 @@ export default function Header({ minimal = false }: { minimal?: boolean }) {
           aria-label="32Care Dental Clinic — home"
           className={`shrink-0 rounded-xl px-2.5 py-1.5 transition ${solid ? "" : "bg-white shadow-lg shadow-[#073576]/10"}`}
         >
-          <Image quality={90} src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789452419/logo-32.png" alt="32Care Dental Clinic" width={318} height={80} priority className="h-9 w-auto sm:h-10 lg:h-11" />
+          <Image quality={90} src="https://res.cloudinary.com/xv3grzfw/image/upload/v1790847418/logo-32.png" alt="32Care Dental Clinic" width={318} height={80} priority className="h-9 w-auto sm:h-10 lg:h-11" />
         </Link>
 
         <div className="flex items-center gap-2 sm:gap-3">

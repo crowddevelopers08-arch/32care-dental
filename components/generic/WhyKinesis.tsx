@@ -35,13 +35,13 @@ export default function WhyKinesis() {
           <Reveal className="lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:self-center">
             <div className="grid grid-cols-2 gap-3 sm:gap-4">
               <div className="relative col-span-2 aspect-3/2 overflow-hidden rounded-4xl shadow-2xl shadow-[#052b50]/20">
-                <Image quality={90} src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789454254/DSC_2591.jpg" alt="32Care Dental Clinic reception area" fill sizes="(min-width:1024px) 600px, 100vw" className="object-cover object-top" />
+                <Image quality={90} src="https://res.cloudinary.com/xv3grzfw/image/upload/v1790847811/DSC_2591.jpg" alt="32Care Dental Clinic reception area" fill sizes="(min-width:1024px) 600px, 100vw" className="object-cover object-top" />
               </div>
               <div className="relative aspect-3/2 overflow-hidden rounded-3xl shadow-lg shadow-[#052b50]/15">
-                <Image quality={90} src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789454223/DSC01914.jpg" alt="Dental treatment room at 32Care Dental Clinic" fill sizes="(min-width:1024px) 300px, 50vw" className="object-cover" />
+                <Image quality={90} src="https://res.cloudinary.com/xv3grzfw/image/upload/v1790847805/DSC01914.jpg" alt="Dental treatment room at 32Care Dental Clinic" fill sizes="(min-width:1024px) 300px, 50vw" className="object-cover" />
               </div>
               <div className="relative aspect-3/2 overflow-hidden rounded-3xl shadow-lg shadow-[#052b50]/15">
-                <Image quality={90} src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789454220/DSC_2652.jpg" alt="Patient consultation at 32Care Dental Clinic" fill sizes="(min-width:1024px) 300px, 50vw" className="object-cover" />
+                <Image quality={90} src="https://res.cloudinary.com/xv3grzfw/image/upload/v1790847805/DSC_2652.jpg" alt="Patient consultation at 32Care Dental Clinic" fill sizes="(min-width:1024px) 300px, 50vw" className="object-cover" />
               </div>
             </div>
           </Reveal>

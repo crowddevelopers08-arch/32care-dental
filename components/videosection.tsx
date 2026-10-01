@@ -7,9 +7,9 @@ import { Underline } from "./Underline";
 const directions = ["left", "up", "right"] as const;
 
 const videos = [
-  { id: 1, title: "Doctor Explaining Treatment Evaluation", videoUrl: "https://res.cloudinary.com/y8z11z0x/video/upload/v1789461637/20260324_205957_1__squished.mp4" },
-  { id: 2, title: "Advanced Treatment Overview", videoUrl: "https://res.cloudinary.com/y8z11z0x/video/upload/v1789460555/32Care_Dental_clinic_video_testimonial_1.mp4" },
-  { id: 3, title: "In-Clinic Treatment Process", videoUrl: "https://res.cloudinary.com/y8z11z0x/video/upload/v1789462006/DSC_3963_squished.mp4" },
+  { id: 1, title: "Doctor Explaining Treatment Evaluation", videoUrl: "https://res.cloudinary.com/xv3grzfw/video/upload/v1790847797/20260324_205957_1__squished.mp4" },
+  { id: 2, title: "Advanced Treatment Overview", videoUrl: "https://res.cloudinary.com/xv3grzfw/video/upload/v1790847819/32Care_Dental_clinic_video_testimonial_1.mp4" },
+  { id: 3, title: "In-Clinic Treatment Process", videoUrl: "https://res.cloudinary.com/xv3grzfw/video/upload/v1790847796/DSC_3963_squished.mp4" },
 ];
 
 export default function VideoSection() {

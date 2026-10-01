@@ -71,7 +71,7 @@ export default function HealthcareEasy() {
             <div className={`absolute inset-6 overflow-hidden ${BLOB}`}>
               <Image
                 quality={90}
-                src="https://res.cloudinary.com/y8z11z0x/image/upload/v1789452417/DSC_2673.jpg"
+                src="https://res.cloudinary.com/xv3grzfw/image/upload/v1790847419/DSC_2673.jpg"
                 alt="Dr. Shital Kawale Dharmadhikari at 32Care Dental Clinic"
                 fill
                 sizes="(min-width:1024px) 420px, 70vw"
@@ -106,7 +106,7 @@ export default function HealthcareEasy() {
         >
           <div className="relative aspect-video w-full max-w-3xl overflow-hidden rounded-3xl bg-black shadow-2xl" onClick={(e) => e.stopPropagation()}>
             <video
-              src="https://res.cloudinary.com/y8z11z0x/video/upload/v1789461637/20260324_205957_1__squished.mp4"
+              src="https://res.cloudinary.com/xv3grzfw/video/upload/v1790847797/20260324_205957_1__squished.mp4"
               title="Doctor explaining treatment evaluation"
               controls
               autoPlay

@@ -6,10 +6,10 @@ import { Underline } from "./Underline";
 const directions = ["left", "up", "down", "right"] as const;
 
 const steps = [
-  { number: "01", title: "Meet The Dentist", description: "Consult experienced dental specialists for personalised care and treatment guidance.", icon: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452420/meet-dentist.svg", background: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789461613/DSC_2522.jpg" },
-  { number: "02", title: "Dental Evaluation", description: "Get accurate diagnosis and a customised treatment plan for your dental needs.", icon: "/root-icon-1.png", background: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789461611/DSC_2526.jpg" },
-  { number: "03", title: "Advanced Treatment", description: "Experience precise root canal care with modern dental techniques.", icon: "/root-icon-2.png", background: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789460976/DSC_0063.jpg" },
-  { number: "04", title: "Restoration & Follow-Up", description: "Restore tooth function with expert aftercare and dental support.", icon: "/root-icon-3.png", background: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789461609/DSC_2538.jpg" },
+  { number: "01", title: "Meet The Dentist", description: "Consult experienced dental specialists for personalised care and treatment guidance.", icon: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847419/meet-dentist.svg", background: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847805/DSC_2522.jpg" },
+  { number: "02", title: "Dental Evaluation", description: "Get accurate diagnosis and a customised treatment plan for your dental needs.", icon: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847420/root-icon-1.png", background: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847815/DSC_2526.jpg" },
+  { number: "03", title: "Advanced Treatment", description: "Experience precise root canal care with modern dental techniques.", icon: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847420/root-icon-2.png", background: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847800/DSC_0063.jpg" },
+  { number: "04", title: "Restoration & Follow-Up", description: "Restore tooth function with expert aftercare and dental support.", icon: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847421/root-icon-3.png", background: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847819/DSC_2538.jpg" },
 ];
 
 

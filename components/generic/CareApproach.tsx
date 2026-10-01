@@ -10,27 +10,27 @@ type Pillar = { title: string; icon: string };
 const pillars: Pillar[] = [
   {
     title: "General Dentistry",
-    icon: "/icons-1.png",
+    icon: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847414/icons-1.png",
   },
   {
     title: "Root Canal Treatment",
-    icon: "/icons-2.png",
+    icon: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847415/icons-2.png",
   },
   {
     title: "Dental Implants",
-    icon: "/icons-3.png",
+    icon: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847416/icons-3.png",
   },
   {
     title: "Orthodontics & Aligners",
-    icon: "/icons-4.png",
+    icon: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847416/icons-4.png",
   },
   {
     title: "Cosmetic Dentistry",
-    icon: "/icons-5.png",
+    icon: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847416/icons-5.png",
   },
   {
     title: "Specialized Dental Care",
-    icon: "/icons-6.png",
+    icon: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847417/icons-6.png",
   },
 ];
 

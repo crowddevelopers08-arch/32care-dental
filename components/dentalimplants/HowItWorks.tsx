@@ -6,10 +6,10 @@ import { Underline } from "./Underline";
 const directions = ["left", "up", "down", "right"] as const;
 
 const steps = [
-  { number: "01", title: "Meet The Dentist", description: "Consult with experienced dental specialists for personalised guidance and comfortable care.", icon: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452404/dental-implants.png", background: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789461613/DSC_2522.jpg" },
-  { number: "02", title: "Dental Consultation", description: "Receive a detailed assessment and customised treatment plan based on your dental needs.", icon: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452405/dental-implants-1.png", background: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789461611/DSC_2526.jpg" },
-  { number: "03", title: "Implant Treatment Procedure", description: "Advanced implant procedures performed with precision, expertise, and patient-focused care.", icon: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452406/dental-implants-2.png", background: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789460976/DSC_0063.jpg" },
-  { number: "04", title: "Smile Restoration & Care", description: "Complete your smile transformation with quality restoration and ongoing dental support.", icon: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789452406/dental-implants-3.png", background: "https://res.cloudinary.com/y8z11z0x/image/upload/v1789461609/DSC_2538.jpg" },
+  { number: "01", title: "Meet The Dentist", description: "Consult with experienced dental specialists for personalised guidance and comfortable care.", icon: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847400/dental-implants.png", background: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847805/DSC_2522.jpg" },
+  { number: "02", title: "Dental Consultation", description: "Receive a detailed assessment and customised treatment plan based on your dental needs.", icon: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847401/dental-implants-1.png", background: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847815/DSC_2526.jpg" },
+  { number: "03", title: "Implant Treatment Procedure", description: "Advanced implant procedures performed with precision, expertise, and patient-focused care.", icon: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847402/dental-implants-2.png", background: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847800/DSC_0063.jpg" },
+  { number: "04", title: "Smile Restoration & Care", description: "Complete your smile transformation with quality restoration and ongoing dental support.", icon: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847402/dental-implants-3.png", background: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847819/DSC_2538.jpg" },
 ];
 
 
