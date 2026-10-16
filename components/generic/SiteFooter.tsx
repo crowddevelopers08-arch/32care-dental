@@ -12,20 +12,11 @@ export function SiteFooter() {
   return (
     <footer className="relative bg-[#102532] px-5 pt-12 font-['Onest',sans-serif] text-white sm:px-8 lg:px-12">
       <div className="mx-auto max-w-[1315px]">
-        <div className="grid items-center max-sm:gap-4 gap-8 pb-6 md:grid-cols-[1fr_1.6fr_1fr]">
+        <div className="grid items-center max-sm:gap-4 gap-8 pb-6 md:grid-cols-2">
           <a href="/generic" aria-label="32Care Dental Clinic home" className="relative block h-[76px] w-[230px] max-w-full rounded-[8px] bg-white">
             <Image src="https://res.cloudinary.com/xv3grzfw/image/upload/v1790847418/logo-32.png" alt="32Care Dental Clinic" fill sizes="230px" className="object-contain object-left" />
           </a>
 
-          <form className="flex items-center gap-5 max-[620px]:block" action="#">
-            <label htmlFor="footer-email" className="shrink-0 text-[16px] font-bold max-[620px]:mb-3 max-[620px]:block">Subscribe:</label>
-            <div className="flex h-14 min-w-0 flex-1 overflow-hidden rounded-[5px] bg-white">
-              <input id="footer-email" type="email" placeholder="Enter Your Email" aria-label="Email address" className="min-w-0 flex-1 bg-white px-5 text-[14px] text-[#38536b] outline-none placeholder:text-[#647b8d]" />
-              <button type="submit" aria-label="Subscribe" className="grid w-[72px] shrink-0 place-items-center bg-[#0067ac] text-white transition hover:bg-[#54b6ec]">
-                <svg viewBox="0 0 24 24" className="h-6 w-6" fill="currentColor" aria-hidden="true"><path d="m21.6 2.4-19 8.1c-.9.4-.8 1.7.1 2l7.1 2.3 2.3 7.1c.3.9 1.6 1 2 .1l8.1-19c.3-.8-.5-1.4-1.2-1.1L9.9 13.1l-4.3-1.4 16-9.3Z" /></svg>
-              </button>
-            </div>
-          </form>
 
           <div className="text-right md:justify-self-end max-[767px]:text-left"><strong className="text-[30px] items-center font-extrabold italic text-[#54b6ec]">7,000+</strong> <span className="text-[14px] font-bold">Happy Patients</span></div>
         </div>

@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
-import { ArrowIcon } from "./Icons";
+import ContactButtons from "./ContactButtons";
 
 type Pillar = { title: string; icon: string };
 
@@ -157,13 +157,7 @@ export default function CareApproach() {
             </ol>
 
             <div className="relative mt-6 flex justify-center sm:mt-8 lg:mt-12">
-              <a
-                href="#book"
-                className="group inline-flex items-center gap-2 rounded-full bg-[#0876b5] px-7 py-3.5 text-sm font-semibold text-white shadow-xl shadow-[#0876b5]/25 transition hover:-translate-y-0.5 hover:bg-[#073576]"
-              >
-                Book Your Consultation
-                <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </a>
+              <ContactButtons />
             </div>
           </div>
         </Reveal>

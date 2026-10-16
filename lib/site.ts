@@ -3,6 +3,7 @@ const address = "Zen Square, Office No. 311, 3rd Floor, Panchshil Towers Road, O
 export const site = {
   name: "32Care Dental Clinic",
   phones: [{ href: "tel:+919975611589", label: "+91 9975611589" }],
+  whatsapp: "https://wa.me/919975611589",
   address,
   hours: [
     { day: "Mon – Sat", time: "10:00 AM – 7:00 PM" },

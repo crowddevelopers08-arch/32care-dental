@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { site } from "@/lib/site";
-import { ArrowIcon, CalendarPlusIcon, MailIcon, PhoneIcon } from "./Icons";
+import ContactButtons from "./ContactButtons";
+import { CalendarPlusIcon, MailIcon, PhoneIcon } from "./Icons";
 
 export default function AppointmentBanner() {
   return (
@@ -46,14 +47,7 @@ export default function AppointmentBanner() {
               <p className="mt-1 max-w-xs text-[13px] leading-relaxed text-white/70">
                 Schedule your appointment today and experience dental care you can trust.
               </p>
-              <a
-                href="#book"
-                className="group mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-4 py-2.5 text-center text-[12px] font-bold uppercase tracking-wide text-[#0c355e] transition hover:bg-[#e8f5fc] sm:w-auto sm:justify-start sm:px-5 sm:text-[13px]"
-              >
-                <span className="sm:hidden">Book Now</span>
-                <span className="hidden sm:inline">Book Appointment Now</span>
-                <ArrowIcon className="h-3.5 w-3.5 shrink-0 transition-transform group-hover:translate-x-1" />
-              </a>
+              <ContactButtons tone="dark" className="mt-4" />
             </div>
           </div>
 

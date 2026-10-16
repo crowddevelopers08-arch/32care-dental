@@ -26,6 +26,21 @@ body {
   animation: whatsapp-pulse 1.8s ease-in-out infinite;
 }
 
+@keyframes fab-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.15; }
+}
+
+.fab-blink {
+  animation: fab-blink 1.2s ease-in-out 3 both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fab-blink {
+    animation: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .whatsapp-pulse {
     animation: none;

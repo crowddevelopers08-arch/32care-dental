@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
-import { ArrowIcon, ToothIcon } from "./Icons";
+import ContactButtons from "./ContactButtons";
+import { ToothIcon } from "./Icons";
 
 const highlights = [
   "17+ Years of Experience",
@@ -54,13 +55,7 @@ export default function GreatSmile() {
         </Reveal>
 
         <Reveal delay={140} className="mt-9 flex justify-center sm:mt-12">
-          <a
-            href="#book"
-            className="group inline-flex items-center gap-2 rounded-full bg-[#0876b5] px-7 py-3.5 text-sm font-semibold text-white shadow-xl shadow-[#0876b5]/25 transition hover:-translate-y-0.5 hover:bg-[#073576]"
-          >
-            Book Your Consultation
-            <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </a>
+          <ContactButtons />
         </Reveal>
       </div>
     </section>

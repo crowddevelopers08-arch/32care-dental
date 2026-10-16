@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import SectionHeading from "./SectionHeading";
+import ContactButtons from "./ContactButtons";
 import { PlayIcon, PlusIcon } from "./Icons";
 import { CarouselArrows, CarouselDots } from "./CarouselControls";
 import { useAutoCarousel } from "./useAutoCarousel";
@@ -97,12 +98,7 @@ export default function PatientStories() {
         </div>
 
         <div className="mt-8 flex justify-center sm:mt-10">
-          <a
-            href="#book"
-            className="group relative inline-flex min-h-[58px] items-center justify-center gap-2 overflow-hidden rounded-full bg-[#0876b5] px-9 text-base font-extrabold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#073576]"
-          >
-            Book Your Consultation
-          </a>
+          <ContactButtons />
         </div>
       </div>
 

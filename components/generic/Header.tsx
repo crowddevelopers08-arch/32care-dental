@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
-import { PhoneIcon } from "./Icons";
+import { PhoneIcon, WhatsAppIcon } from "./Icons";
 
 export default function Header({ minimal = false }: { minimal?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
@@ -54,10 +54,13 @@ export default function Header({ minimal = false }: { minimal?: boolean }) {
 
           {!minimal && (
             <a
-              href="#book"
-              className="hidden items-center rounded-full bg-[#54b6ec] px-5 py-2.5 text-sm font-semibold text-[#052b50] shadow-lg shadow-[#0067ac]/30 transition hover:-translate-y-0.5 hover:bg-[#8fe0ff] sm:inline-flex"
+              href={site.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden items-center gap-2 rounded-full bg-[#25d366] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-[#25d366]/30 transition hover:-translate-y-0.5 hover:bg-[#1eb957] sm:inline-flex"
             >
-              Book Your Consultation
+              <WhatsAppIcon className="h-4 w-4" />
+              WhatsApp Us
             </a>
           )}
           <a

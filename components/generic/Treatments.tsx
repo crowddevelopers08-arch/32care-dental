@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
-import { ArrowIcon } from "./Icons";
+import ContactButtons from "./ContactButtons";
 import { treatments } from "@/lib/treatments";
 
 /* Each panel gets its own shade so the stack reads as separate layers */
@@ -122,13 +122,7 @@ export default function Treatments() {
               The right treatment depends on your dental condition. Our dentist will assess your teeth and explain
               the options that may be appropriate for you.
             </p>
-            <a
-              href="#book"
-              className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-[#052b50] transition hover:bg-[#e8f5fc]"
-            >
-              Book Your Consultation
-              <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </a>
+            <ContactButtons tone="dark" className="shrink-0" />
           </div>
         </Reveal>
       </div>

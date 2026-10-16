@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { AnimatedCounter } from "./AnimatedCounter";
 import Reveal from "./Reveal";
+import ContactButtons from "./ContactButtons";
 import { PlayIcon, PlusIcon } from "./Icons";
 
 const BLOB = "rounded-[62%_38%_53%_47%/41%_54%_46%_59%]";
@@ -47,12 +48,7 @@ export default function HealthcareEasy() {
             (ISOI).
           </p>
           <div className="mt-7 flex flex-wrap items-center gap-6">
-            <a
-              href="#book"
-              className="inline-flex items-center rounded-full bg-[#0876b5] px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#0876b5]/30 transition hover:-translate-y-0.5 hover:bg-[#073576]"
-            >
-              Book An Appointment
-            </a>
+            <ContactButtons />
             <button type="button" onClick={() => setOpen(true)} className="group flex items-center gap-3">
               <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-[#0876b5] text-white shadow-lg shadow-[#0876b5]/30 transition group-hover:scale-105">
                 <PlayIcon className="ml-0.5 h-4 w-4" />

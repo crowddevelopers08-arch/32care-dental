@@ -1,6 +1,7 @@
 import AppointmentBanner from "@/components/generic/AppointmentBanner";
 import CareApproach from "@/components/generic/CareApproach";
 import Faq from "@/components/generic/Faq";
+import FloatingActions from "@/components/generic/FloatingActions";
 import GreatSmile from "@/components/generic/GreatSmile";
 import HealthcareEasy from "@/components/generic/HealthcareEasy";
 import Header from "@/components/generic/Header";
@@ -27,6 +28,7 @@ export default function Home() {
         <Faq />
         <SiteFooter />
       </main>
+      <FloatingActions />
       {/* <MobileBar /> */}
     </>
   );
