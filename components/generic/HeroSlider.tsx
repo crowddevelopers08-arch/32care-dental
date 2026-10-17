@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const slides = [
   { src: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847419/DSC_2673.jpg", alt: "Dentist consulting a patient at 32Care Dental Clinic" },
-  { src: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847426/DSC_2666.jpg", alt: "Dental treatment in progress at 32Care Dental Clinic" },
+  // { src: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847426/DSC_2666.jpg", alt: "Dental treatment in progress at 32Care Dental Clinic" },
   { src: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847811/DSC_2591.jpg", alt: "Dental specialist at 32Care Dental Clinic" },
   { src: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847805/DSC_2652.jpg", alt: "Modern treatment room at 32Care Dental Clinic" },
   { src: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847805/DSC01914.jpg", alt: "32Care Dental Clinic reception" },
