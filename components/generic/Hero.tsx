@@ -55,7 +55,7 @@ export default function Hero() {
             <div className="flex -space-x-3">
               {[
                 "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847419/DSC_2673.jpg",
-                "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847426/DSC_2666.jpg",
+                "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847811/DSC_2591.jpg",
               ].map((src) => (
                 <Image quality={90} key={src} src={src} alt="" width={96} height={96} className="h-12 w-12 rounded-full object-cover ring-2 ring-[#052b50]" />
               ))}
