@@ -4,12 +4,13 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const slides = [
-  { src: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847419/DSC_2673.jpg", alt: "Dentist consulting a patient at 32Care Dental Clinic" },
-  // { src: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847426/DSC_2666.jpg", alt: "Dental treatment in progress at 32Care Dental Clinic" },
-  { src: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847811/DSC_2591.jpg", alt: "Dental specialist at 32Care Dental Clinic" },
-  { src: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847805/DSC_2652.jpg", alt: "Modern treatment room at 32Care Dental Clinic" },
-  { src: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847805/DSC01914.jpg", alt: "32Care Dental Clinic reception" },
-  { src: "https://res.cloudinary.com/xv3grzfw/image/upload/v1790847425/DSC_2643.jpg", alt: "Dental care team at 32Care Dental Clinic" },
+  { src: "https://res.cloudinary.com/xv3grzfw/image/upload/v1792223922/DSC_2578.jpg", alt: "32Care Dental Clinic" },
+  { src: "https://res.cloudinary.com/xv3grzfw/image/upload/v1792223921/DSC_2611.jpg", alt: "32Care Dental Clinic" },
+  { src: "https://res.cloudinary.com/xv3grzfw/image/upload/v1792223737/DSC_2617.jpg", alt: "32Care Dental Clinic" },
+  { src: "https://res.cloudinary.com/xv3grzfw/image/upload/v1792223732/20260127_112826.jpg", alt: "32Care Dental Clinic" },
+  { src: "https://res.cloudinary.com/xv3grzfw/image/upload/v1792223728/DSC_3809.jpg", alt: "32Care Dental Clinic" },
+  { src: "https://res.cloudinary.com/xv3grzfw/image/upload/v1792223728/20251202_173029.jpg", alt: "32Care Dental Clinic" },
+  { src: "https://res.cloudinary.com/xv3grzfw/image/upload/v1792223726/Pic_with_patient.png", alt: "32Care dentist with a patient" },
 ];
 
 export default function HeroSlider() {
