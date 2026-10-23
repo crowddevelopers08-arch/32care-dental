@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
-import { PhoneIcon, WhatsAppIcon } from "./Icons";
+import { PhoneIcon } from "./Icons";
 
 export default function Header({ minimal = false }: { minimal?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
@@ -52,17 +52,6 @@ export default function Header({ minimal = false }: { minimal?: boolean }) {
             </span>
           </a>
 
-          {!minimal && (
-            <a
-              href={site.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden items-center gap-2 rounded-full bg-[#25d366] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-[#25d366]/30 transition hover:-translate-y-0.5 hover:bg-[#1eb957] sm:inline-flex"
-            >
-              <WhatsAppIcon className="h-4 w-4" />
-              WhatsApp Us
-            </a>
-          )}
           <a
             href={site.phones[0].href}
             aria-label="Call 32Care Dental Clinic"

@@ -2,7 +2,7 @@
 
 import { useEffect, useState, type ReactNode } from "react";
 import { site } from "@/lib/site";
-import { PhoneIcon, PinIcon, WhatsAppIcon } from "./Icons";
+import { PhoneIcon, PinIcon } from "./Icons";
 
 const button =
   "inline-flex h-12 items-center rounded-full px-3 text-white shadow-md transition hover:-translate-y-1 focus-visible:outline-2 focus-visible:outline-offset-2";
@@ -11,7 +11,7 @@ const button =
 // → pills expand with labels → collapse → repeat.
 const BLINK_STAGGER = 0.15;
 const BLINK_START = 0.5;
-const BLINK_MS = (BLINK_START + 1.2 * 3 + BLINK_STAGGER * 3) * 1000;
+const BLINK_MS = (BLINK_START + 1.2 * 3 + BLINK_STAGGER * 2) * 1000;
 const EXPAND_MS = 3000;
 
 function Content({
@@ -77,22 +77,13 @@ export default function FloatingActions() {
       >
         <Content index={1} cycle={cycle} expanded={expanded} icon={<PhoneIcon className="h-5 w-5" />} label="Call Now" />
       </a>
-      <a
-        href={site.whatsapp}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Chat with 32Care Dental Clinic on WhatsApp"
-        className={`${button} whatsapp-pulse bg-[#25d366] hover:bg-[#1eb957] focus-visible:outline-[#25d366]`}
-      >
-        <Content index={2} cycle={cycle} expanded={expanded} icon={<WhatsAppIcon className="h-6 w-6" />} label="WhatsApp" />
-      </a>
       <button
         type="button"
         aria-label="Back to top"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         className={`${button} cursor-pointer bg-[#0067ac] hover:bg-[#54b6ec] focus-visible:outline-[#073576]`}
       >
-        <Content index={3} cycle={cycle} expanded={expanded} icon={<span className="text-[24px] leading-none">↑</span>} label="Scroll to Top" />
+        <Content index={2} cycle={cycle} expanded={expanded} icon={<span className="text-[24px] leading-none">↑</span>} label="Scroll to Top" />
       </button>
     </div>
   );

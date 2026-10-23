@@ -1,5 +1,5 @@
 import { site } from "@/lib/site";
-import { PhoneIcon, WhatsAppIcon } from "./Icons";
+import { PhoneIcon } from "./Icons";
 
 const sizes = {
   md: "px-7 py-3.5 text-sm",
@@ -28,15 +28,6 @@ export default function ContactButtons({
       >
         <PhoneIcon className="h-5 w-5" />
         Call Now for Appointment
-      </a>
-      <a
-        href={site.whatsapp}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`inline-flex items-center justify-center gap-2 rounded-full bg-[#25d366] font-semibold text-white shadow-xl shadow-[#25d366]/25 transition hover:-translate-y-0.5 hover:bg-[#1eb957] ${sizes[size]}`}
-      >
-        <WhatsAppIcon className="h-5 w-5" />
-        WhatsApp Us
       </a>
     </div>
   );

@@ -49,7 +49,7 @@ export default function Hero() {
             Personalized dental care for tooth pain, implants, root canals, aligners and complete oral health in Kharadi, Pune.
           </p>
 
-          <ContactButtons tone="dark" size="lg" className="mt-6 sm:mt-8 sm:justify-center lg:justify-start" />
+          <ContactButtons tone="dark" size="lg" className="mt-6 max-sm:hidden sm:mt-8 sm:justify-center lg:justify-start" />
 
           <div className="mt-10 hidden items-center gap-4 lg:flex">
             <div className="flex -space-x-3">
@@ -70,6 +70,9 @@ export default function Hero() {
 
         {/* Clinic photo slider */}
         <HeroSlider />
+
+        {/* Mobile only: call button sits below the photo slider */}
+        <ContactButtons tone="dark" size="lg" className="sm:hidden" />
       </div>
     </section>
   );
