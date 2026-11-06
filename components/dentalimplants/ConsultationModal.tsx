@@ -150,7 +150,7 @@ export function ConsultationModal() {
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,53,118,0)_40%,rgba(7,53,118,.65)_100%)]" />
           <div className="absolute inset-x-6 bottom-6 text-white">
             <p className="text-[18px] leading-snug font-bold">18+ Years of Trusted Dental Implant Expertise</p>
-            <p className="mt-1 text-[13px] text-[#dceaff]">7,000+ happy patients across Pune</p>
+            <p className="mt-1 text-[13px] text-[#dceaff] mb-2 sm:mb-4">7,000+ happy patients across Pune</p>
           </div>
         </div>
       </div>

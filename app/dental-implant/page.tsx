@@ -8,12 +8,14 @@ import { DentalPromo } from "@/components/dentalimplants/DentalPromo";
 import { HowItWorks } from "@/components/dentalimplants/HowItWorks";
 import { SeniorCareHero } from "@/components/dentalimplants/SeniorCareHero";
 import { DentalNavbar } from "@/components/dentalimplants/DentalNavbar";
+import { OfferBanner } from "@/components/dentalimplants/OfferBanner";
 import { ConsultationModal } from "@/components/dentalimplants/ConsultationModal";
 import { VideoPopup } from "@/components/dentalimplants/VideoPopup";
 
 export default function DentalImplantPage() {
   return <>
     <DentalNavbar />
+    <OfferBanner />
     <SeniorCareHero />
     <BeforeAfter />
     <VideoSection />
