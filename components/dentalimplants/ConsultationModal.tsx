@@ -2,7 +2,6 @@
 
 import { FormEvent, useEffect, useState } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import { SectionLabel } from "./SectionLabel";
 
 const field = "mt-1.5 h-[54px] w-full appearance-none rounded-[14px] border-2 border-[#c9e6f5] bg-[#fbfdfe] px-5 text-[15px] font-semibold text-[#11263c] outline-none placeholder:font-medium placeholder:text-[#778493]";
@@ -14,7 +13,6 @@ export function openConsultationModal() {
 }
 
 export function ConsultationModal() {
-  const router = useRouter();
   const [open, setOpen] = useState(false);
   const [phone, setPhone] = useState("");
   const [showPhoneError, setShowPhoneError] = useState(false);
@@ -74,7 +72,9 @@ export function ConsultationModal() {
 
       form.reset();
       setPhone("");
-      router.push("/dental-implant/thank-you");
+      // Full page load (not client-side navigation) so tracking scripts run fresh on the thank-you page.
+      // eslint-disable-next-line @next/next/no-location-assign-relative-destination -- full reload is intentional
+      window.location.assign("/dental-implant/thank-you");
     } catch (err) {
       setStatus("error");
       setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
